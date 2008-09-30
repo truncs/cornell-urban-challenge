@@ -1,0 +1,87 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A5C3426-75C9-4C46-AA64-DA7502E5C315}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Actuation</RootNamespace>
+    <AssemblyName>Actuation</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActuationCommandInterface.cs" />
+    <Compile Include="ActuationModule.cs" />
+    <Compile Include="BitmapField.cs" />
+    <Compile Include="BoolField.cs" />
+    <Compile Include="CommandMask.cs" />
+    <Compile Include="ConversionField.cs" />
+    <Compile Include="CylinderDeactivationMode.cs" />
+    <Compile Include="EnumField.cs" />
+    <Compile Include="FeedbackField.cs" />
+    <Compile Include="FeedbackMapper.cs" />
+    <Compile Include="FeedbackType.cs" />
+    <Compile Include="IntField.cs" />
+    <Compile Include="InType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawField.cs" />
+    <Compile Include="TransmissionGearCommand.cs" />
+    <Compile Include="TransmissionShiftDirection.cs" />
+    <Compile Include="WheelspeedValidityFlags.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FeedbackMapping.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <None Include="FeedbackMapping.xsx">
+      <DependentUpon>FeedbackMapping.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\Dataset\Dataset.csproj">
+      <Project>{E2AE124D-0E64-440F-AD3D-B7F1ABBDFD76}</Project>
+      <Name>Dataset</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
