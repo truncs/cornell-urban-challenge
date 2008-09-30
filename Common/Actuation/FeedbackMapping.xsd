@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="FeedbackMapping"
+                  targetNamespace="http://www.cornellracing.com/FeedbackMapping.xsd"
+                  elementFormDefault="qualified"
+                  xmlns="http://www.cornellracing.com/FeedbackMapping.xsd"
+                  xmlns:mstns="http://www.cornellracing.com/FeedbackMapping.xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="offsetOrder">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="pre"/>
+      <xs:enumeration value="post"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:complexType name="conversion">
+    <xs:sequence>
+      <xs:element name="scale" type="xs:double" default="1"/>
+      <xs:element name="offset" minOccurs="0" maxOccurs="1" default="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:double">
+              <xs:attribute name="order" use="required" type="offsetOrder"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="enumInType">
+    <xs:union memberTypes="xs:int">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="default"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:union>
+  </xs:simpleType>
+
+  <xs:complexType name="enumMappingValue">
+    <xs:attribute name="in" use="required" type="enumInType"/>
+    <xs:attribute name="outenum" use="required" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="enumMapping">
+    <xs:sequence>
+      <xs:element name="value" type="enumMappingValue" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="intMappingValue">
+    <xs:attribute name="in" use="required" type="enumInType"/>
+    <xs:attribute name="outint" use="required" type="xs:int"/>
+  </xs:complexType>
+
+  <xs:complexType name="intMapping">
+    <xs:sequence>
+      <xs:element name="value" type="intMappingValue" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="bitFieldMap">
+    <xs:attribute name="fieldname" use="optional" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="bitfield">
+    <xs:sequence>
+      <xs:element name="bit" type="bitFieldMap" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="intypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="u8"/>
+      <xs:enumeration value="s8"/>
+      <xs:enumeration value="u16"/>
+      <xs:enumeration value="s16"/>
+      <xs:enumeration value="s32"/>
+      <xs:enumeration value="u32"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="feedbackField">
+    <xs:choice minOccurs="1" maxOccurs="1">
+      <xs:element name="enum" type="enumMapping"/>
+      <xs:element name="intMap" type="intMapping"/>
+      <xs:element name="conversion" type="conversion"/>
+      <xs:element name="bitmap" type="bitfield"/>
+      <xs:element name="bool"/>
+      <xs:element name="raw"/>
+    </xs:choice>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="intype" type="intypes" use="required"/>
+    <xs:attribute name="outtype" type="xs:string" use="required"/>
+    <xs:attribute name="dsitem" type="xs:string" use="optional"/>
+		<xs:attribute name="units" type="xs:string" use="optional"/>
+  </xs:complexType>
+  
+  <xs:complexType name="feedbackType">
+    <xs:sequence>
+      <xs:element name="field" type="feedbackField" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+    <xs:attribute name="method" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <xs:element name="feedbackMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="feedbackType" type="feedbackType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
