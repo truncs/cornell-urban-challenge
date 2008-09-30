@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://www.cornellracing.com/datasetConfig.xsd" elementFormDefault="qualified" xmlns="http://www.cornellracing.com/datasetConfig.xsd" xmlns:mstns="http://www.cornellracing.com/datasetConfig.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified">
+  <xs:complexType name="dataItem" >
+    <xs:sequence>
+      <xs:element name="description" minOccurs="0" maxOccurs="1" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="name" use="required" type="xs:string" />
+    <xs:attribute name="type" use="required" type="xs:string" />
+    <xs:attribute name="units" use="optional" default="none" type="xs:string" />
+    <xs:attribute name="maxEntries" use="optional" type="xs:int" />
+		<xs:attribute name="specialType" use="optional" type="xs:string" />
+		<xs:anyAttribute namespace="##other" />
+  </xs:complexType>
+
+  <xs:complexType name="dataItemGroup">
+    <xs:sequence>
+      <xs:element name="dataItem" minOccurs="0" maxOccurs="unbounded" type="dataItem"/>
+    </xs:sequence>
+    <xs:attribute name="name" use="required" type="xs:string"/>
+  </xs:complexType>
+  
+  <xs:element name="dataItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dataItemGroup" minOccurs="0" maxOccurs="unbounded" type="dataItemGroup"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

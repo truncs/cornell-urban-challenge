@@ -1,0 +1,45 @@
+/*         Urban Challenge E-Stop RNDF          */			
+/*                  October 15, 2007                    */			
+/* ============================ */			
+RNDF_name	Urban_Challenge_EStop		
+num_segments	3		
+num_zones	0		
+format_version	1.0		
+creation_date	15-Oct-07		
+/* ============================ */			
+segment	1		
+num_lanes	1		
+segment_name	Start_area_estop		
+lane	1.1		
+num_waypoints	2		
+lane_width	12		
+checkpoint	1.1.2	1	
+1.1.1	34.584284	-117.368962	/* Start waypoint */
+1.1.2	34.583697	-117.368955	/* Disable line waypoint */
+end_lane			
+end_segment			
+/* ============================ */			
+segment	2		
+num_lanes	1		
+segment_name	Practice_area1_estop		
+lane	2.1		
+num_waypoints	2		
+lane_width	12		
+checkpoint	2.1.2	2	
+2.1.1	34.578168	-117.370454	/* Start line waypoint */
+2.1.2	34.577573	-117.370472	/* Disable line waypoint */
+end_lane			
+end_segment			
+/* ============================ */			
+segment	3		
+num_lanes	1		
+segment_name	Practice_area2_estop		
+lane	3.1		
+num_waypoints	2		
+lane_width	12		
+checkpoint	3.1.2	3	
+3.1.1	34.579133	-117.370274	/* Start line waypoint */
+3.1.2	34.579146	-117.370997	/* Disable line waypoint */
+end_lane			
+end_segment			
+end_file			

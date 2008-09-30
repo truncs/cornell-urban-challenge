@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PublishSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RepoRoot>c:\repo\dgc07</RepoRoot>
+  <RemoteLocations>
+    <RemotePublishLocation>
+      <name>skynet1</name>
+      <localDrive />
+      <remoteShare>\\skynet1\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet2</name>
+      <localDrive />
+      <remoteShare>\\skynet2\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet3</name>
+      <localDrive />
+      <remoteShare>\\skynet3\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet4</name>
+      <localDrive />
+      <remoteShare>\\skynet4\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet5</name>
+      <localDrive />
+      <remoteShare>\\skynet5\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet6</name>
+      <localDrive />
+      <remoteShare>\\skynet6\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet7</name>
+      <localDrive />
+      <remoteShare>\\skynet7\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet8</name>
+      <localDrive />
+      <remoteShare>\\skynet8\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet9</name>
+      <localDrive />
+      <remoteShare>\\skynet9\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet10</name>
+      <localDrive />
+      <remoteShare>\\skynet10\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet11</name>
+      <localDrive />
+      <remoteShare>\\skynet11\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet12</name>
+      <localDrive />
+      <remoteShare>\\skynet12\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>skynet13</name>
+      <localDrive />
+      <remoteShare>\\skynet13\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+    <RemotePublishLocation>
+      <name>Lightning</name>
+      <localDrive />
+      <remoteShare>\\lightning\publish</remoteShare>
+      <username>labuser</username>
+      <password>dgcee05</password>
+      <removeShare>true</removeShare>
+    </RemotePublishLocation>
+  </RemoteLocations>
+  <PreferredRemotePublish />
+</PublishSettings>

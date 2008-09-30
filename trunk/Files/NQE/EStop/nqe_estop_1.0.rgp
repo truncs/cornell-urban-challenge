@@ -1,0 +1,117 @@
+RndfName	Urban_Challenge_EStop
+RndfCreationDate	15-Oct-07
+RoadGraphCreationDate	10/25/2007 7:15:23 PM
+ProjectionOrigin	34.580334	-117.370019
+NumberOfWaypoints	6
+Waypoints
+1.1.1.1	IsNotStop	96.977058	438.241115
+NumberOfMemberPartitions	1
+MemberPartitions
+1.1.1.1
+EndMemberPartitions
+1.1.1.2	IsNotStop	97.619977	373.123464
+NumberOfMemberPartitions	1
+MemberPartitions
+1.1.1.1
+EndMemberPartitions
+2.1.1.1	IsNotStop	-39.913066	-240.225090
+NumberOfMemberPartitions	1
+MemberPartitions
+2.1.1.1
+EndMemberPartitions
+2.1.1.2	IsNotStop	-41.564937	-306.230139
+NumberOfMemberPartitions	1
+MemberPartitions
+2.1.1.1
+EndMemberPartitions
+3.1.1.1	IsNotStop	-23.397044	-133.174917
+NumberOfMemberPartitions	1
+MemberPartitions
+3.1.1.1
+EndMemberPartitions
+3.1.1.2	IsNotStop	-89.734532	-131.732385
+NumberOfMemberPartitions	1
+MemberPartitions
+3.1.1.1
+EndMemberPartitions
+End_Waypoints
+NumberOfPartitions	3
+Partition
+PartitionId	1.1.1.1
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	-1.560923
+LaneWidth	3.657600
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.1
+1.1.1.2
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	1
+LaneAdjacentPartitions
+1.1.1.1
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	1
+NearbyPartitions
+1.1.1.1
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	2.1.1.1
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	-1.595818
+LaneWidth	3.657600
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+2.1.1.1
+2.1.1.2
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	1
+LaneAdjacentPartitions
+2.1.1.1
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	1
+NearbyPartitions
+2.1.1.1
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	3.1.1.1
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	3.119851
+LaneWidth	3.657600
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+3.1.1.1
+3.1.1.2
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	1
+LaneAdjacentPartitions
+3.1.1.1
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	1
+NearbyPartitions
+3.1.1.1
+End_NearbyPartitions
+End_Partition
+End_Rndf

@@ -1,0 +1,185 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Common</RootNamespace>
+    <AssemblyName>Common</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Debug\Common.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Release\Common.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CarMode.cs" />
+    <Compile Include="CarTimestamp.cs" />
+    <Compile Include="CoordinateMode.cs" />
+    <Compile Include="Coordinates.cs" />
+    <Compile Include="EarthModel\Geocentric.cs" />
+    <Compile Include="EarthModel\PlanarProjection.cs" />
+    <Compile Include="EarthModel\WGS84.cs" />
+    <Compile Include="Integration\AdaptiveGuassianQuad.cs" />
+    <Compile Include="Integration\Error.cs" />
+    <Compile Include="Integration\IntegrationRule.cs" />
+    <Compile Include="Integration\IntegrationWorkspace.cs" />
+    <Compile Include="Integration\QK15.cs" />
+    <Compile Include="Integration\QK21.cs" />
+    <Compile Include="Integration\QK31.cs" />
+    <Compile Include="Integration\QK41.cs" />
+    <Compile Include="Integration\QK51.cs" />
+    <Compile Include="Integration\QK61.cs" />
+    <Compile Include="Integration\QuadConst.cs" />
+    <Compile Include="Integration\QuadFunction.cs" />
+    <Compile Include="Integration\QuadKronrod.cs" />
+    <Compile Include="IPointTransformer.cs" />
+    <Compile Include="LLACoord.cs" />
+    <Compile Include="Mapack\CholeskyDecomposition.cs" />
+    <Compile Include="Mapack\EigenvalueDecomposition.cs" />
+    <Compile Include="Mapack\LuDecomposition.cs" />
+    <Compile Include="Mapack\Matrix.cs" />
+    <Compile Include="Mapack\Matrix2.cs" />
+    <Compile Include="Mapack\Matrix3.cs" />
+    <Compile Include="Mapack\Matrix4.cs" />
+    <Compile Include="Mapack\QrDecomposition.cs" />
+    <Compile Include="Mapack\SingularValueDecomposition.cs" />
+    <Compile Include="MotionVector.cs" />
+    <Compile Include="Pair.cs" />
+    <Compile Include="Path\BezierPathSegment.cs" />
+    <Compile Include="Path\CirclePathSegment.cs" />
+    <Compile Include="Path\ConnectWaypointPath.cs" />
+    <Compile Include="Path\IPath.cs" />
+    <Compile Include="Path\IPathSegment.cs" />
+    <Compile Include="Path\ISpeedPathSegment.cs" />
+    <Compile Include="Path\LanePath.cs" />
+    <Compile Include="Path\LinePath.cs" />
+    <Compile Include="Path\PartitionPathSegment.cs" />
+    <Compile Include="Path\LinePathSegment.cs" />
+    <Compile Include="Path\Path.cs" />
+    <Compile Include="Path\PointOnPath.cs" />
+    <Compile Include="Pose\PoseAbsData.cs" />
+    <Compile Include="Pose\PoseRelData.cs" />
+    <Compile Include="Pose\RelativeTransform.cs" />
+    <Compile Include="Pose\RelativeTransformBuilder.cs" />
+    <Compile Include="Pose\TransformationNotFoundException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rect.cs" />
+    <Compile Include="RndfNetwork\Intersection\InterconnectID.cs" />
+    <Compile Include="RndfNetwork\Intersection\IntersectionID.cs" />
+    <Compile Include="RndfNetwork\Mdf.cs" />
+    <Compile Include="RndfNetwork\MdfHandler.cs" />
+    <Compile Include="RndfNetwork\RndfNetworkHandler.cs" />
+    <Compile Include="RndfNetwork\RoadObjects\Blockage.cs" />
+    <Compile Include="RndfNetwork\RoadObjects\Goal.cs" />
+    <Compile Include="RndfNetwork\Waypoint\IConnectWaypoints.cs" />
+    <Compile Include="RndfNetwork\Intersection\Intersection.cs" />
+    <Compile Include="RndfNetwork\Segment\Lane\Lane.cs" />
+    <Compile Include="RndfNetwork\Segment\Lane\LaneID.cs" />
+    <Compile Include="RndfNetwork\Intersection\Interconnect.cs" />
+    <Compile Include="RndfNetwork\Segment\Lane\LanePartition.cs" />
+    <Compile Include="RndfNetwork\Segment\Lane\LanePartitionID.cs" />
+    <Compile Include="RndfNetwork\RndfNetwork.cs" />
+    <Compile Include="RndfNetwork\Segment\Segment.cs" />
+    <Compile Include="RndfNetwork\Segment\SegmentID.cs" />
+    <Compile Include="RndfNetwork\Segment\Lane\UserPartition.cs" />
+    <Compile Include="RndfNetwork\Segment\Lane\UserPartitionID.cs" />
+    <Compile Include="RndfNetwork\Segment\Way.cs" />
+    <Compile Include="RndfNetwork\Segment\WayID.cs" />
+    <Compile Include="RndfNetwork\Waypoint\IWaypoint.cs" />
+    <Compile Include="RndfNetwork\Waypoint\IWaypointID.cs" />
+    <Compile Include="RndfNetwork\Waypoint\RndfWayPoint.cs" />
+    <Compile Include="RndfNetwork\Waypoint\RndfWaypointID.cs" />
+    <Compile Include="RndfNetwork\Waypoint\UserWaypoint.cs" />
+    <Compile Include="RndfNetwork\Waypoint\UserWaypointID.cs" />
+    <Compile Include="RndfNetwork\Zone\Zone.cs" />
+    <Compile Include="RndfNetwork\Zone\ZoneID.cs" />
+    <Compile Include="Roots\Brent.cs" />
+    <Compile Include="Roots\RootFunction.cs" />
+    <Compile Include="Route\ExitLocalRoute.cs" />
+    <Compile Include="Route\FullRoute.cs" />
+    <Compile Include="Route\GoalLocalRoute.cs" />
+    <Compile Include="Route\LocalOption.cs" />
+    <Compile Include="Route\LocalRoute.cs" />
+    <Compile Include="Route\PointOfInterest.cs" />
+    <Compile Include="Route\Route.cs" />
+    <Compile Include="Route\Routes.cs" />
+    <Compile Include="Sensors\LocalMap\LocalMapBox.cs" />
+    <Compile Include="Sensors\LocalMap\LocalMapCluster.cs" />
+    <Compile Include="Sensors\LocalRoadEstimate\LocalRoadEstimate.cs" />
+    <Compile Include="Sensors\LocalRoadModel.cs" />
+    <Compile Include="Sensors\Old\ObservedObstacle.cs" />
+    <Compile Include="Sensors\Old\ObservedObstacles.cs" />
+    <Compile Include="Sensors\Old\ObservedVehicle.cs" />
+    <Compile Include="Sensors\Old\ObservedVehicles.cs" />
+    <Compile Include="Sensors\OperationalObstacle.cs" />
+    <Compile Include="Sensors\OperationalObstacleClass.cs" />
+    <Compile Include="Sensors\SparseRoadBearing.cs" />
+    <Compile Include="Sensors\SceneEstimatorClusters.cs" />
+    <Compile Include="Sensors\SideObstacle.cs" />
+    <Compile Include="Sensors\SideRoadEdge.cs" />
+    <Compile Include="Shapes\Circle.cs" />
+    <Compile Include="Shapes\CircleSegment.cs" />
+    <Compile Include="Shapes\Line.cs" />
+    <Compile Include="Shapes\LineList.cs" />
+    <Compile Include="Shapes\LineSegment.cs" />
+    <Compile Include="Shapes\Polygon.cs" />
+    <Compile Include="Splines\CubicBezier.cs" />
+    <Compile Include="Splines\QuarticBezier.cs" />
+    <Compile Include="Splines\SmoothingSpline.cs" />
+    <Compile Include="Utility\BigEndianBinaryReader.cs" />
+    <Compile Include="Utility\BigEndianBinaryWriter.cs" />
+    <Compile Include="Utility\BlockageTester.cs" />
+    <Compile Include="Utility\HighResDateTime.cs" />
+    <Compile Include="Utility\MathUtil.cs" />
+    <Compile Include="Utility\MMWaitableTimer.cs" />
+    <Compile Include="Utility\MultiEnumerator.cs" />
+    <Compile Include="Utility\NormalRandom.cs" />
+    <Compile Include="Utility\RollingQueue.cs" />
+    <Compile Include="Utility\TimeWindowQueue.cs" />
+    <Compile Include="Vector4.cs" />
+    <Compile Include="Vehicle\TahoeParams.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vehicle\TahoeSim.cs" />
+    <Compile Include="Vehicle\TransmissionGear.cs" />
+    <Compile Include="Vehicle\VehicleRndfState.cs" />
+    <Compile Include="Vehicle\VehicleState.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

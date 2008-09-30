@@ -1,0 +1,15 @@
+MDF_name	Sample3
+RNDF	Sample3
+format_version	1.0
+checkpoints	
+num_checkpoints	4
+1
+2
+3
+4			
+end_checkpoints			
+speed_limits			
+num_speed_limits	1		
+1	10	20	
+end_speed_limits		
+end_file		

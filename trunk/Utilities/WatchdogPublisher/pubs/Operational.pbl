@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>Operational</name>
+  <files>
+    <string>\trunk\operational\operational\bin\x86\release\actuation.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\arbitermissiondescription.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\arbiterroadnetwork.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\behaviors.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\common.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\common.xml</string>
+    <string>\trunk\operational\operational\bin\x86\release\darparndf.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\dataset.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\drawingutilities.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\messagingservice.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\nameservice.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\net.xml</string>
+    <string>\trunk\operational\operational\bin\x86\release\operational.exe</string>
+    <string>\trunk\operational\operational\bin\x86\release\operational.exe.config</string>
+    <string>\trunk\operational\operational\bin\x86\release\operationalcommon.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\operationalservice.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\operationaluiservice.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\pathsmoother.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\simoperationalservice.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\simulatorclientfacade.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\simulatorcommon.dll</string>
+    <string>\trunk\operational\operational\bin\x86\release\loqosu.txt</string>
+    <string>\trunk\operational\operational\bin\x86\release\loqopasswd.txt</string>
+    <string>\trunk\operational\operational\bin\x86\release\params.xml</string>
+  </files>
+  <relativeLocation>\Operational</relativeLocation>
+  <lastPublish>2007-09-02T23:08:24.504875-04:00</lastPublish>
+  <commands>
+    <string>Operational.exe</string>
+  </commands>
+  <started>false</started>
+</Publish>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="specialTypeConfig"
+						targetNamespace="http://www.cornellracing.com/specialTypeConfig.xsd"
+						elementFormDefault="qualified"
+						attributeFormDefault="qualified"
+						xmlns="http://www.cornellracing.com/specialTypeConfig.xsd"
+						xmlns:mstns="http://www.cornellracing.com/specialTypeConfig.xsd"
+						xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="windowSize" type="xs:positiveInteger" default="5" />
+	<xs:attribute name="nominalRate" type="xs:positiveInteger" default="20" />
+</xs:schema>

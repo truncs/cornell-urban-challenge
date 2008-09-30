@@ -1,0 +1,16 @@
+MDF_name	clockwise
+RNDF_name	libannex
+creation_date	6/19/2008 10:56:33 AM
+checkpoints
+num_checkpoints	5
+5
+6
+7
+8
+9
+end_checkpoints
+speed_limits
+num_speed_limits	1
+1	5	5
+end_speed_limits
+end_file

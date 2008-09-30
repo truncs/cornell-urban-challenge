@@ -1,0 +1,94 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Behaviors</RootNamespace>
+    <AssemblyName>Behaviors</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavior.cs" />
+    <Compile Include="BehaviorDecorator.cs" />
+    <Compile Include="ChangeLaneBehavior.cs" />
+    <Compile Include="CompletionReport\BlockageType.cs" />
+    <Compile Include="CompletionReport\CompletionReport.cs" />
+    <Compile Include="CompletionReport\CompletionResult.cs" />
+    <Compile Include="CompletionReport\SuccessCompletionReport.cs" />
+    <Compile Include="CompletionReport\TrajectoryBlockedReport.cs" />
+    <Compile Include="EmergencyStop.cs" />
+    <Compile Include="HoldBrakeBehavior.cs" />
+    <Compile Include="InvalidBehaviorException.cs" />
+    <Compile Include="NullBehavior.cs" />
+    <Compile Include="OncomingVehicleDecorator.cs" />
+    <Compile Include="OperationalStartupBehavior.cs" />
+    <Compile Include="OpposingLaneDecorator.cs" />
+    <Compile Include="PathFollowingBehavior.cs" />
+    <Compile Include="PathSearchBehavior.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScalarSpeedCommand.cs" />
+    <Compile Include="ShutUpAndDoItDecorator.cs" />
+    <Compile Include="SpeedCommand.cs" />
+    <Compile Include="StayInLaneBehavior.cs" />
+    <Compile Include="StopAtDistSpeedCommand.cs" />
+    <Compile Include="StopAtLineSpeedCommand.cs" />
+    <Compile Include="SupraLaneBehavior.cs" />
+    <Compile Include="TurnBehavior.cs" />
+    <Compile Include="TurnSignal.cs" />
+    <Compile Include="TurnSignalDecorator.cs" />
+    <Compile Include="UTurnBehavior.cs" />
+    <Compile Include="WidenBoundariesDecorator.cs" />
+    <Compile Include="ZoneBehavior.cs" />
+    <Compile Include="ZoneParkingBehavior.cs" />
+    <Compile Include="ZoneParkingPullOutBehavior.cs" />
+    <Compile Include="ZoneTravelingBehavior.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\arbiter\trunk\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork.csproj">
+      <Project>{5ED74205-2992-462F-8FC4-381CDB2E63C4}</Project>
+      <Name>ArbiterRoadNetwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

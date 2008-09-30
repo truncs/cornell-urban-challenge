@@ -1,0 +1,131 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ED74205-2992-462F-8FC4-381CDB2E63C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Arbiter.ArbiterRoads</RootNamespace>
+    <AssemblyName>ArbiterRoadNetwork</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArbiterRoadNetwork.cs" />
+    <Compile Include="Identification\IVehicleArea.cs" />
+    <Compile Include="Navigation\DownstreamPointOfInterest.cs" />
+    <Compile Include="Navigation\INavigableTravelArea.cs" />
+    <Compile Include="SupraLanes\IFQMPlanable.cs" />
+    <Compile Include="SupraLanes\ISupraLaneComponent.cs" />
+    <Compile Include="Navigation\FakeExitNode.cs" />
+    <Compile Include="Navigation\IPriorityNode.cs" />
+    <Compile Include="Navigation\NavigableEdge.cs" />
+    <Compile Include="Navigation\INavigableNode.cs" />
+    <Compile Include="IntersectionAreas\ArbiterStoppedExit.cs" />
+    <Compile Include="Navigation\NavigationBlockage.cs" />
+    <Compile Include="Navigation\NavigationPenalties.cs" />
+    <Compile Include="SupraLanes\SupraLane.cs" />
+    <Compile Include="SupraLanes\SupraLaneComponentList.cs" />
+    <Compile Include="TravelAreas\ArbiterLaneBoundary.cs" />
+    <Compile Include="General\ArbiterSpeedLimit.cs" />
+    <Compile Include="General\IArbiterWaypoint.cs" />
+    <Compile Include="General\IConnectAreaWaypoints.cs" />
+    <Compile Include="General\IConnectAreaWaypointsId.cs" />
+    <Compile Include="General\IGenericWaypoint.cs" />
+    <Compile Include="General\ITraversableWaypoint.cs" />
+    <Compile Include="Generation\AdjacencyGeneration.cs" />
+    <Compile Include="Generation\CreationTools\CreationTools.cs" />
+    <Compile Include="Generation\GenerationTools.cs" />
+    <Compile Include="Generation\InterconnectGeneration.cs" />
+    <Compile Include="Generation\NavigationGeneration.cs" />
+    <Compile Include="Generation\RoadNetworkGeneration.cs" />
+    <Compile Include="Generation\SegmentGeneration.cs" />
+    <Compile Include="Generation\ZoneGeneration.cs" />
+    <Compile Include="Identification\IAreaId.cs" />
+    <Compile Include="Identification\IAreaSubtypeId.cs" />
+    <Compile Include="Identification\IAreaSubtypeWaypointId.cs" />
+    <Compile Include="General\INetworkObject.cs" />
+    <Compile Include="IntersectionAreas\ArbiterInterconnect.cs" />
+    <Compile Include="IntersectionAreas\ArbiterInterconnectId.cs" />
+    <Compile Include="IntersectionAreas\ArbiterIntersection.cs" />
+    <Compile Include="IntersectionAreas\ArbiterIntersectionId.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TravelAreas\ArbiterLane.cs" />
+    <Compile Include="TravelAreas\ArbiterLaneId.cs" />
+    <Compile Include="TravelAreas\ArbiterLanePartition.cs" />
+    <Compile Include="TravelAreas\ArbiterLanePartitionId.cs" />
+    <Compile Include="IntersectionAreas\ArbiterSafetyZone.cs" />
+    <Compile Include="TravelAreas\ArbiterSegment.cs" />
+    <Compile Include="TravelAreas\ArbiterSegmentId.cs" />
+    <Compile Include="TravelAreas\ArbiterUserPartition.cs" />
+    <Compile Include="TravelAreas\ArbiterUserPartitionId.cs" />
+    <Compile Include="TravelAreas\ArbiterUserWaypoint.cs" />
+    <Compile Include="TravelAreas\ArbiterUserWaypointId.cs" />
+    <Compile Include="TravelAreas\ArbiterWay.cs" />
+    <Compile Include="TravelAreas\ArbiterWayId.cs" />
+    <Compile Include="TravelAreas\ArbiterWaypoint.cs" />
+    <Compile Include="TravelAreas\ArbiterWaypointId.cs" />
+    <Compile Include="ZoneAreas\ArbiterParkingSpot.cs" />
+    <Compile Include="ZoneAreas\ArbiterParkingSpotId.cs" />
+    <Compile Include="ZoneAreas\ArbiterParkingSpotWaypoint.cs" />
+    <Compile Include="ZoneAreas\ArbiterParkingSpotWaypointId.cs" />
+    <Compile Include="ZoneAreas\ArbiterPerimeter.cs" />
+    <Compile Include="ZoneAreas\ArbiterPerimeterId.cs" />
+    <Compile Include="ZoneAreas\ArbiterPerimeterWaypoint.cs" />
+    <Compile Include="ZoneAreas\ArbiterPerimeterWaypointId.cs" />
+    <Compile Include="ZoneAreas\ArbiterZone.cs" />
+    <Compile Include="ZoneAreas\ArbiterZoneCostMap.cs" />
+    <Compile Include="ZoneAreas\ArbiterZoneId.cs" />
+    <Compile Include="ZoneAreas\ArbiterZoneNavigableNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Remoting Interfaces\Arbiter\DarpaRndf\DarpaRndf\DarpaRndf\DarpaRndf.csproj">
+      <Project>{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}</Project>
+      <Name>DarpaRndf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj">
+      <Project>{D0D71001-2079-4383-8D6B-0DA7FD42F08C}</Project>
+      <Name>DrawingUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

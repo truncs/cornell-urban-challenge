@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>Road Fitter Center</name>
+  <files>
+    <string>\trunk\sensor prototypes\roadfitter\release\params.txt</string>
+    <string>\trunk\sensor prototypes\roadfitter\release\roadfitter.exe</string>
+  </files>
+  <relativeLocation>\Road Fitter Center</relativeLocation>
+  <lastPublish>2007-09-02T23:06:41.286125-04:00</lastPublish>
+  <commands>
+    <string>RoadFitter.exe "d:\\logs\\" rx center 0 NOFLIP</string>
+  </commands>
+  <started>false</started>
+</Publish>

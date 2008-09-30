@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeOperational", "FakeOperational\FakeOperational.csproj", "{DC14C9F9-2C0F-4B08-9003-A3B1FFF17DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\..\Remoting Interfaces\Common\Common.csproj", "{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameService", "..\..\Remoting Interfaces\NameService\NameService.csproj", "{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Behaviors", "..\..\Remoting Interfaces\Behaviors\Behaviors.csproj", "{934E43B8-C627-4BAB-8115-C84E8AFC2F60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationalService", "..\..\Remoting Interfaces\operationalService\OperationalService.csproj", "{FBA7A699-D418-478D-BBB0-456992D8DA01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbiterRoadNetwork", "..\..\arbiter\trunk\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork.csproj", "{5ED74205-2992-462F-8FC4-381CDB2E63C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingUtilities", "..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj", "{D0D71001-2079-4383-8D6B-0DA7FD42F08C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarpaRndf", "..\..\Remoting Interfaces\Arbiter\DarpaRndf\DarpaRndf\DarpaRndf\DarpaRndf.csproj", "{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug - Test|Any CPU = Debug - Test|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC14C9F9-2C0F-4B08-9003-A3B1FFF17DEA}.Debug - Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC14C9F9-2C0F-4B08-9003-A3B1FFF17DEA}.Debug - Test|Any CPU.Build.0 = Debug|Any CPU
+		{DC14C9F9-2C0F-4B08-9003-A3B1FFF17DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC14C9F9-2C0F-4B08-9003-A3B1FFF17DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC14C9F9-2C0F-4B08-9003-A3B1FFF17DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC14C9F9-2C0F-4B08-9003-A3B1FFF17DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Debug - Test|Any CPU.ActiveCfg = Debug - Test|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Debug - Test|Any CPU.Build.0 = Debug - Test|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}.Debug - Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}.Debug - Test|Any CPU.Build.0 = Debug|Any CPU
+		{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934E43B8-C627-4BAB-8115-C84E8AFC2F60}.Debug - Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{934E43B8-C627-4BAB-8115-C84E8AFC2F60}.Debug - Test|Any CPU.Build.0 = Debug|Any CPU
+		{934E43B8-C627-4BAB-8115-C84E8AFC2F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934E43B8-C627-4BAB-8115-C84E8AFC2F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934E43B8-C627-4BAB-8115-C84E8AFC2F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934E43B8-C627-4BAB-8115-C84E8AFC2F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA7A699-D418-478D-BBB0-456992D8DA01}.Debug - Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA7A699-D418-478D-BBB0-456992D8DA01}.Debug - Test|Any CPU.Build.0 = Debug|Any CPU
+		{FBA7A699-D418-478D-BBB0-456992D8DA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA7A699-D418-478D-BBB0-456992D8DA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA7A699-D418-478D-BBB0-456992D8DA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA7A699-D418-478D-BBB0-456992D8DA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Debug - Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Debug - Test|Any CPU.Build.0 = Debug|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Debug - Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Debug - Test|Any CPU.Build.0 = Debug|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Debug - Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Debug - Test|Any CPU.Build.0 = Debug|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

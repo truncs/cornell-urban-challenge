@@ -1,0 +1,111 @@
+MDF_name	uce_mdf_B26-2
+RNDF	uce_rndf_1.txt
+format_version	1.0
+creation_date	02-Nov-07
+checkpoints
+num_checkpoints	31
+47
+4
+35
+41
+1
+4
+14
+1
+4
+25
+143
+3
+1
+4
+11
+3
+1
+2
+34
+46
+41
+26
+5
+1
+2
+26
+18
+25
+19
+5
+75
+end_checkpoints
+speed_limits
+num_speed_limits	68
+1	5	10 /* red_zone_ElotAccessRd */
+2	5	10 /* Challenge_Ln */
+3	10	15 /* Main_Cir_eastside */
+4	5	5 /* Pit_Ln */
+5	5	5 /* Victory_Ln */
+6	10	20 /* George_Blvd */
+7	10	20 /* Sabre_Blvd */
+8	5	10 /* Red_zone_access_Rd */
+9	10	20 /* North_Nevada */
+10	10	20 /* South_Nevada */
+11	10	20 /* Washington_St */
+12	10	20 /* Carolina_Ave */
+13	10	20 /* Montana_St */
+14	10	20 /* Utah_St */
+15	10	20 /* Oregon_St */
+16	10	20 /* Michigan_Ln */
+17	10	20 /* Ohio_Ln */
+18	10	20 /* Kentucky_Ln */
+19	10	20 /* Indiana_Ln */
+20	10	20 /* Tennessee_Ln */
+21	10	20 /* Alabama_Ln */
+22	10	20 /* Mississippi_Ln */
+23	10	20 /* Arkansas_Ln */
+24	10	25 /* Texas_Ave */
+25	10	20 /* Virginia_Ave */
+26	10	20 /* Idaho_St */
+27	5	7 /* Outback_Rd */
+28	10	30 /* Phantom_Rd */
+29	5	10 /* Ghost_Rd */
+30	10	20 /* Main_Cir_westside */
+31	5	15 /* George_Blvd_south */
+32	10	20 /* North_road */
+33	10	20 /* Red_stub_Rd1 */
+34	5	15 /* Red_stub_Rd2 */
+35	5	5 /* Red_stub_Rd3 */
+36	5	5 /* Red_stub_Rd4 */
+37	5	5 /* Red_stub_Rd5 */
+38	5	5 /* Start_chute_stub1 */
+39	5	5 /* Start_chute_stub2 */
+40	5	5 /* Start_chute_stub3 */
+41	5	5 /* Start_chute_stub4 */
+42	5	5 /* Start_chute_stub5 */
+43	5	5 /* Start_chute_stub6 */
+44	5	5 /* Start_chute_stub7 */
+45	5	5 /* Start_chute_stub8 */
+46	5	5 /* Start_chute_stub9 */
+47	5	5 /* Start_chute_stub10 */
+48	5	5 /* Start_chute_stub11 */
+49	5	5 /* Start_chute_stub12 */
+50	5	5 /* Start_chute_stub13 */
+51	5	5 /* Start_chute_stub14 */
+52	5	5 /* Start_chute_stub15 */
+53	5	5 /* Start_chute_stub16 */
+54	5	5 /* Start_chute_stub17 */
+55	5	5 /* Start_chute_stub18 */
+56	5	5 /* Start_chute_stub19 */
+57	5	5 /* Start_chute_stub20 */
+58	10	20 /* Mass_Ave */
+59	10	20 /* North_Nevada_south */
+60	5	10 /* Red_zone_Wlot_Access_Rd */
+61	10	20 /* George_Blvd 2 */
+62	5	10 /* Red_zone_Center_Lot */
+63	5	10 /* Red_zone_East_Lot */
+64	5	10 /* Red_zone_West_Lot */
+65	5	10 /* White_zone_north */
+66	5	10 /* White_zone_south */
+67	5	10 /* Blue_zone_north */
+68	5	10 /* Blue_zone_south */
+69	5	10 /* Start_zone */
+end_speed_limits
+end_file

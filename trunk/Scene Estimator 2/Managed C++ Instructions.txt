@@ -1,0 +1,23 @@
+For proper handling of managed / unmanaged C++ interfacing:
+
+For H Files-
+
+Put this chunk at the TOP of the file, but AFTER all your include statements
+#ifdef __cplusplus_cli
+#pragma managed(push,off)
+#endif
+
+Put this chunk at the BOTTOM of the file, but before the last #endif
+that you have in there to prevent multiple inclusions.
+#ifdef __cplusplus_cli
+#pragma managed(pop)
+#endif
+
+
+
+For CPP Files
+
+Just put this at the top after any #includes you have.
+#ifdef __cplusplus_cli
+#pragma unmanaged
+#endif

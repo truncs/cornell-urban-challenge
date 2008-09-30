@@ -1,0 +1,22 @@
+MDF_name	brian dirt
+RNDF_name	dir path
+creation_date	10/20/2007 10:55:16 AM
+checkpoints
+num_checkpoints	7
+12
+15
+6
+13
+7
+5
+3
+end_checkpoints
+speed_limits
+num_speed_limits	5
+1	5	30
+2	5	30
+3	5	30
+4	5	30
+5	5	30
+end_speed_limits
+end_file

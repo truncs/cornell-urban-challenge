@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UDPLogger", "UDPLogger.vcproj", "{CAB952E4-AA68-42FA-A68F-48780289A48D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release-Logging|Win32 = Release-Logging|Win32
+		Release-Logging-NoVelo|Win32 = Release-Logging-NoVelo|Win32
+		Release-Monitoring|Win32 = Release-Monitoring|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Debug|Win32.Build.0 = Debug|Win32
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Release-Logging|Win32.ActiveCfg = Release-Logging|Win32
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Release-Logging|Win32.Build.0 = Release-Logging|Win32
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Release-Logging-NoVelo|Win32.ActiveCfg = Release-Logging-NoVelo|Win32
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Release-Logging-NoVelo|Win32.Build.0 = Release-Logging-NoVelo|Win32
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Release-Monitoring|Win32.ActiveCfg = Release-Monitor|Win32
+		{CAB952E4-AA68-42FA-A68F-48780289A48D}.Release-Monitoring|Win32.Build.0 = Release-Monitor|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

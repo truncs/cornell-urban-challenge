@@ -1,0 +1,167 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EE5D495-C8FF-4B15-ACC8-DE4EA889AE3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.OperationalUI.Controls</RootNamespace>
+    <AssemblyName>OperationalUIControls</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPlot, Version=0.9.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\NPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.FreeGlut, Version=2.4.0.1, Culture=neutral, PublicKeyToken=6e602a6ad6c0d06d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\binaries\TAO OpenGL\Tao.FreeGlut.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.OpenGl, Version=2.1.0.4, Culture=neutral, PublicKeyToken=1ca010269a4501ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\binaries\TAO OpenGL\Tao.OpenGl.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Platform.Windows, Version=1.0.0.4, Culture=neutral, PublicKeyToken=701104b2da67a104, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\binaries\TAO OpenGL\Tao.Platform.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl, Version=1.2.11.1, Culture=neutral, PublicKeyToken=9c7a200e36c0094e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\binaries\TAO OpenGL\Tao.Sdl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArcVotingDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArcVotingDisplay.Designer.cs">
+      <DependentUpon>ArcVotingDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicLabelAttacher.cs" />
+    <Compile Include="CallbackAttacher.cs" />
+    <Compile Include="DisplayObjects\CarDisplayObject.cs" />
+    <Compile Include="DisplayObjects\CircleDisplayObject2.cs" />
+    <Compile Include="DisplayObjects\CircleDisplayObject.cs" />
+    <Compile Include="DisplayObjects\CircleSegmentDisplayObject.cs" />
+    <Compile Include="DisplayObjects\GridDisplayObject.cs" />
+    <Compile Include="DisplayObjects\LineListDisplayObject.cs" />
+    <Compile Include="DisplayObjects\LocalLaneModelDisplayObject.cs" />
+    <Compile Include="DisplayObjects\ObstacleDisplayObject.cs" />
+    <Compile Include="DisplayObjects\PlanningGridDisplayObject.cs" />
+    <Compile Include="DisplayObjects\PointDisplayObject.cs" />
+    <Compile Include="DisplayObjects\PointsDisplayObject.cs" />
+    <Compile Include="DisplayObjects\PolygonDisplayObject.cs" />
+    <Compile Include="DisplayObjects\PolygonSetDisplayObject.cs" />
+    <Compile Include="DisplayObjects\TrackedPathDisplayObject.cs" />
+    <Compile Include="DisplayObjects\UntrackedClustersDisplayObject.cs" />
+    <Compile Include="DisplayObjectTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DisplayObjectTreeView.Designer.cs">
+      <DependentUpon>DisplayObjectTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleBufferedListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawingSurface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawingSurface.Designer.cs">
+      <DependentUpon>DrawingSurface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericLabelAttacher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ZOrderListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZOrderListView.Designer.cs">
+      <DependentUpon>ZOrderListView.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\Behaviors\Behaviors.csproj">
+      <Project>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</Project>
+      <Name>Behaviors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\Dataset\Dataset.csproj">
+      <Project>{E2AE124D-0E64-440F-AD3D-B7F1ABBDFD76}</Project>
+      <Name>Dataset</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OperationalCommon\OperationalCommon.csproj">
+      <Project>{966A29D8-F866-4BAC-847D-1FFE30061FCD}</Project>
+      <Name>OperationalCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OperationalUIService\OperationalUIService.csproj">
+      <Project>{10E8E827-09F3-4049-BFDE-23BD19F99807}</Project>
+      <Name>OperationalUIService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperationalUICommon\OperationalUICommon.csproj">
+      <Project>{14149B04-71D7-45DE-8706-7C104E6162A7}</Project>
+      <Name>OperationalUICommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ArcVotingDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ArcVotingDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayObjectTreeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DisplayObjectTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZOrderListView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ZOrderListView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Graphing\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

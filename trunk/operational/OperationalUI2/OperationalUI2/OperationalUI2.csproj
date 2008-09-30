@@ -1,0 +1,234 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{844CC69E-4276-4F7B-B873-91CB97ABC8DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.OperationalUI</RootNamespace>
+    <AssemblyName>OperationalUI2</AssemblyName>
+    <ApplicationIcon>Piechart.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPlot, Version=0.9.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OperationalUIControls\NPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.Platform.Windows, Version=1.0.0.4, Culture=neutral, PublicKeyToken=701104b2da67a104, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\binaries\TAO OpenGL\Tao.Platform.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DisplayObjects\ArcDisplayObject.cs" />
+    <Compile Include="DisplayObjects\PlanningGridExtDisplayObject.cs" />
+    <Compile Include="DisplayObjects\SmoothingResultsDisplayObject.cs" />
+    <Compile Include="formArcVoting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formArcVoting.Designer.cs">
+      <DependentUpon>formArcVoting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDataset.Designer.cs">
+      <DependentUpon>formDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMain.Designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMap.Designer.cs">
+      <DependentUpon>formMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\ConversionListWrapper.cs" />
+    <Compile Include="Graphing\DataItemAdapter.cs" />
+    <Compile Include="Graphing\formGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphing\formGraph.Designer.cs">
+      <DependentUpon>formGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\formGraphProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphing\formGraphProperties.Designer.cs">
+      <DependentUpon>formGraphProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\GraphItemAdapter.cs" />
+    <Compile Include="Graphing\GraphItemProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Graphing\GraphItemProperties.Designer.cs">
+      <DependentUpon>GraphItemProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphing\TimeWindowQueue.cs" />
+    <Compile Include="OperationalFinder.cs" />
+    <Compile Include="OperationalInterface.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formArcVoting.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formArcVoting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDataset.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formDataset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphing\formGraph.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphing\formGraphProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>formGraphProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphing\GraphItemProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GraphItemProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SimulatorInterface.cs" />
+    <Compile Include="StepController.cs" />
+    <Compile Include="Utilities\ImageColorizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\arbiter\trunk\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork.csproj">
+      <Project>{5ED74205-2992-462F-8FC4-381CDB2E63C4}</Project>
+      <Name>ArbiterRoadNetwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\Arbiter\DarpaRndf\DarpaRndf\DarpaRndf\DarpaRndf.csproj">
+      <Project>{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}</Project>
+      <Name>DarpaRndf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\Behaviors\Behaviors.csproj">
+      <Project>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</Project>
+      <Name>Behaviors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\Dataset\Dataset.csproj">
+      <Project>{E2AE124D-0E64-440F-AD3D-B7F1ABBDFD76}</Project>
+      <Name>Dataset</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\MessagingService\MessagingService.csproj">
+      <Project>{19A82170-7FEE-4527-B835-A7359B864B28}</Project>
+      <Name>MessagingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\NameService\NameService.csproj">
+      <Project>{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}</Project>
+      <Name>NameService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Remoting Interfaces\operationalService\OperationalService.csproj">
+      <Project>{FBA7A699-D418-478D-BBB0-456992D8DA01}</Project>
+      <Name>OperationalService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj">
+      <Project>{D0D71001-2079-4383-8D6B-0DA7FD42F08C}</Project>
+      <Name>DrawingUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Simulation\trunk\SimulatorClient\SimulatorClientFacade\SimulatorClientFacade.csproj">
+      <Project>{D89B5AE4-C729-4B09-9D97-4A0A02E683EC}</Project>
+      <Name>SimulatorClientFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Simulation\trunk\SimulatorFacade\SimulatorFacade\SimulatorFacade.csproj">
+      <Project>{82F96E2B-E51C-4D58-A1B2-E0B3FB7DE9D4}</Project>
+      <Name>SimulatorFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OperationalCommon\OperationalCommon.csproj">
+      <Project>{966A29D8-F866-4BAC-847D-1FFE30061FCD}</Project>
+      <Name>OperationalCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OperationalUIService\OperationalUIService.csproj">
+      <Project>{10E8E827-09F3-4049-BFDE-23BD19F99807}</Project>
+      <Name>OperationalUIService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{C065F4F1-A4AC-4911-B070-FCD6C5AC334C}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperationalUICommon\OperationalUICommon.csproj">
+      <Project>{14149B04-71D7-45DE-8706-7C104E6162A7}</Project>
+      <Name>OperationalUICommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperationalUIControls\OperationalUIControls.csproj">
+      <Project>{3EE5D495-C8FF-4B15-ACC8-DE4EA889AE3C}</Project>
+      <Name>OperationalUIControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="net.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Piechart.ico" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\GreenFlag.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

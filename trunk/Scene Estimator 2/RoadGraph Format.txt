@@ -1,0 +1,81 @@
+RndfName	XX
+RndfCreationDate	XX
+RoadGraphCreationDate	XX	XX
+ProjectionOrigin	XX	XX
+NumberOfWaypoints	XX
+Waypoints
+Waypoint
+IDSTRING	IsStop (IsNotStop)	X.XXXXXX	X.XXXXXX
+NumberOfMemberPartitions	XX
+MemberPartitions
+IDSTRING
+IDSTRING
+IDSTRING
+...etc...
+EndMemberPartitions
+End_Waypoint
+Waypoint
+IDSTRING	IsStop (IsNotStop)	X.XXXXXX	X.XXXXXX
+NumberOfMemberPartitions	XX
+MemberPartitions
+IDSTRING
+IDSTRING
+IDSTRING
+...etc...
+EndMemberPartitions
+End_Waypoint
+...etc...
+End_Waypoints
+NumberOfPartitions	XX
+Partition
+PartitionId	IDSTRING
+PartitionType	Lane (Zone, Interconnect)
+Sparse	False (True)
+FitType	Line (Polygon)
+FitParameters	XX.X	YY.Y	ZZ.Z
+LaneWidth	XX.X (0.0 for invalid, but this directive doesn't exist except for lanes)
+LeftBoundary	DoubleYellow
+RightBoundary	BrokenWhite
+NumberOfPoints	XX
+Points
+IDSTRING
+IDSTRING
+...etc...
+End_Points
+NumberOfNearbyStoplines	XX
+NearbyStoplines
+IDSTRING
+IDSTRING
+...etc...
+End_NearbyStoplines
+NumberOfLaneAdjacentPartitions	XX
+LaneAdjacentPartitions
+IDSTRING
+IDSTRING
+...etc... (NOTE: this partition is included in its list of lane adjacent partitions)
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	XX
+LeftLaneAdjacentPartitions
+IDSTRING
+IDSTRING
+IDSTRING
+...etc...
+End_LeftLaneAdjacentPartitions
+NumberOfRightLaneAdjacentPartitions	XX
+RightLaneAdjacentPartitions
+IDSTRING
+IDSTRING
+IDSTRING
+...etc...
+End_RightLaneAdjacentPartitions
+NumberOfNearbyPartitions	XX
+NearbyPartitions
+IDSTRING
+IDSTRING
+...etc... (NOTE: this partition is included in its list of nearby partitions)
+End_NearbyPartitions
+End_Partition
+Partition
+...
+End_Partition
+...etc...

@@ -1,0 +1,138 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{403377CB-5F6F-4728-B043-E49EACB645D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Arbiter.Core.Common</RootNamespace>
+    <AssemblyName>ArbiterAdvancedCommon</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arbiter\ArbiterInformation.cs" />
+    <Compile Include="Arbiter\ArbiterMode.cs" />
+    <Compile Include="Arbiter\Art.cs" />
+    <Compile Include="Arbiter\Maneuver.cs" />
+    <Compile Include="Common\LaneChangeParameters.cs" />
+    <Compile Include="Common\LaneChangeReason.cs" />
+    <Compile Include="Common\TacticalBlockage.cs" />
+    <Compile Include="Common\TravelingParameters.cs" />
+    <Compile Include="Reasoning\IgnorableWaypoint.cs" />
+    <Compile Include="Reasoning\InternalState.cs" />
+    <Compile Include="Reasoning\PosteriorEvidence.cs" />
+    <Compile Include="Reasoning\Probability.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\Blockage\BlockageState.cs" />
+    <Compile Include="State\Intersection\IntersectionStartupState.cs" />
+    <Compile Include="State\Intersection\WaitingAtIntersectionExitState.cs" />
+    <Compile Include="State\Intersection\IntersectionDescription.cs" />
+    <Compile Include="State\Blockage\BlockageRecoveryState.cs" />
+    <Compile Include="State\Blockage\EncounteredBlockageState.cs" />
+    <Compile Include="State\Other\eStoppedState.cs" />
+    <Compile Include="State\Other\HumanState.cs" />
+    <Compile Include="State\Other\NoGoalsLeftState.cs" />
+    <Compile Include="State\Other\PausedState.cs" />
+    <Compile Include="State\Other\ResumeState.cs" />
+    <Compile Include="State\Travel\ChangeLanesState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="State\Travel\OpposingLanesState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="State\Travel\StartupOffChuteState.cs" />
+    <Compile Include="State\Travel\StayInLaneState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="State\Travel\StayInSupraLaneState.cs" />
+    <Compile Include="State\Travel\StoppingAtExitState.cs" />
+    <Compile Include="State\Travel\StoppingAtStopState.cs" />
+    <Compile Include="State\Zone\ParkingState.cs" />
+    <Compile Include="State\Zone\PullingOutState.cs" />
+    <Compile Include="State\Intersection\IntersectionState.cs" />
+    <Compile Include="State\IState.cs" />
+    <Compile Include="State\Other\OtherState.cs" />
+    <Compile Include="State\Other\StartUpState.cs" />
+    <Compile Include="State\Travel\StoppingState.cs" />
+    <Compile Include="State\Travel\TravelState.cs" />
+    <Compile Include="State\Intersection\TurnState.cs" />
+    <Compile Include="State\Intersection\uTurnState.cs" />
+    <Compile Include="State\Zone\ZoneOrientationState.cs" />
+    <Compile Include="State\Zone\ZoneStartupState.cs" />
+    <Compile Include="State\Zone\ZoneState.cs" />
+    <Compile Include="State\Zone\ZoneTravelingState.cs" />
+    <Compile Include="Arbiter\StopType.cs" />
+    <Compile Include="Tools\GeneralToolkit.cs" />
+    <Compile Include="Tools\IntersectionToolkit.cs" />
+    <Compile Include="Tools\LaneTools.cs" />
+    <Compile Include="Tools\Polygon\GpcWrapper.cs" />
+    <Compile Include="Tools\Polygon\PolygonToolkit.cs" />
+    <Compile Include="Tools\RoadToolkit.cs" />
+    <Compile Include="Arbiter\TurnDecorators.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\Arbiter\DarpaRndf\DarpaRndf\DarpaRndf\DarpaRndf.csproj">
+      <Project>{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}</Project>
+      <Name>DarpaRndf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\Behaviors\Behaviors.csproj">
+      <Project>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</Project>
+      <Name>Behaviors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj">
+      <Project>{D0D71001-2079-4383-8D6B-0DA7FD42F08C}</Project>
+      <Name>DrawingUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork.csproj">
+      <Project>{5ED74205-2992-462F-8FC4-381CDB2E63C4}</Project>
+      <Name>ArbiterRoadNetwork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gpc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

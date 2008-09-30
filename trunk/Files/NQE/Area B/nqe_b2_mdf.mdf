@@ -1,0 +1,70 @@
+MDF_name	nqe_b2_mdf.txt
+RNDF	nqe_rndf.txt
+format_version	1.0
+creation_date	20-Oct-07
+checkpoints
+num_checkpoints	15
+34
+3
+6
+14
+22
+44
+21
+8
+16
+23
+9
+19
+20
+5
+4
+end_checkpoints
+speed_limits
+num_speed_limits	44
+1	5	15 /* Commissary_loop_bottom */
+2	5	15 /* NS_Rd */
+3	5	5  /* Start_chute_stub1 */
+4	5	10 /* Challenge_Ln */
+5	10	20 /* Main_Cir_westside */
+6	10	15 /* Main_Cir_eastside */
+7	5	5  /* Pit_Ln */
+8	10	20 /* Sabre_Blvd */
+9	10	20 /* South_Nevada_Ave */
+10	10	20 /* Washington_St */
+11	10	20 /* Carolina_Ave */
+12	10	20 /* Utah_St */
+13	10	20 /* Montana_St */
+14	10	20 /* Ohio_Ln */
+15	10	20 /* Indiana_Ln */
+16	10	20 /* Alabama_Ln */
+17	10	20 /* Arkansas_Ln */
+18	10	20 /* Oregon_St */
+19	10	10 /* Sheppard_Ln */
+20	10	15 /* Hawaii_Ln */
+21	10	15 /* Alaska_Ln */	
+22	5	5  /* Start_chute_stub2 */
+23	5	5  /* Start_chute_stub3 */
+24	5	5  /* Start_chute_stub4 */
+25	5	5  /* Start_chute_stub5 */
+26	5	5  /* Start_chute_stub6 */
+27	5	5  /* Start_chute_stub7 */
+28	5	5  /* Start_chute_stub8 */
+29	5	5  /* Start_chute_stub9 */
+30	5	5  /* Start_chute_stub10 */
+31	5	5  /* Start_chute_stub11 */
+32	5	5  /* Start_chute_stub12 */
+33	5	5  /* Start_chute_stub13 */
+34	5	5  /* Start_chute_stub14 */
+35	5	5  /* Start_chute_stub15 */
+36	5	5  /* Start_chute_stub16 */
+37	5	5  /* Start_chute_stub17 */
+38	5	5  /* Start_chute_stub18 */
+39	5	5  /* Start_chute_stub19 */
+40	5	5  /* Start_chute_stub20 */
+41	5	15 /* Commissary_loop_top */
+42	5	15 /* White_zone */
+43	5	15 /* Blue_zone */
+44	5	10 /* Start_zone */
+end_speed_limits
+end_file

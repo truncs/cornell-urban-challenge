@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>MobilEye Center</name>
+  <files>
+    <string>\trunk\sensor prototypes\mobileye rt\release\functionp3.dll</string>
+    <string>\trunk\sensor prototypes\mobileye rt\release\mobileyert.exe</string>
+  </files>
+  <relativeLocation>\MobilEye Center</relativeLocation>
+  <lastPublish>2007-09-02T23:06:01.208-04:00</lastPublish>
+  <commands>
+    <string>MobilEyeRT.exe "d:\\logs\\" rs center 0 NOFLIP</string>
+  </commands>
+  <started>false</started>
+</Publish>

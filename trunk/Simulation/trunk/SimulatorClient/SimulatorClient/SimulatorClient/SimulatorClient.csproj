@@ -1,0 +1,117 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C310768F-8AF9-44EB-9AA4-2581473A216F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Simulator.Client</RootNamespace>
+    <AssemblyName>SimulatorClient</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communications\Communicator.cs" />
+    <Compile Include="Communications\MessagingListener.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SimulatorClient.cs" />
+    <Compile Include="Vehicles\ClientVehicle.cs" />
+    <Compile Include="Vehicles\DynamicsSimVehicle.cs" />
+    <Compile Include="World\SimSensor.cs" />
+    <Compile Include="World\WorldService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\arbiter\trunk\ArbiterAdvancedRemote\ArbiterAdvancedRemote\ArbiterAdvancedRemote.csproj">
+      <Project>{F8BFBD51-58F9-41AF-82F4-2C18FB4195C3}</Project>
+      <Name>ArbiterAdvancedRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\arbiter\trunk\ArbiterAdvancedToolkit\ArbiterAdvancedToolkit\ArbiterAdvancedToolkit.csproj">
+      <Project>{56FF68D2-99E5-4DB4-B277-C773AA3307FA}</Project>
+      <Name>ArbiterAdvancedToolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\arbiter\trunk\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterMissionDescription\ArbiterMissionDescription.csproj">
+      <Project>{66BCCC5B-7173-4232-9307-2D3518F6E509}</Project>
+      <Name>ArbiterMissionDescription</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\arbiter\trunk\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork.csproj">
+      <Project>{5ED74205-2992-462F-8FC4-381CDB2E63C4}</Project>
+      <Name>ArbiterRoadNetwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Remoting Interfaces\MessagingService\MessagingService.csproj">
+      <Project>{19A82170-7FEE-4527-B835-A7359B864B28}</Project>
+      <Name>MessagingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Remoting Interfaces\NameService\NameService.csproj">
+      <Project>{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}</Project>
+      <Name>NameService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj">
+      <Project>{D0D71001-2079-4383-8D6B-0DA7FD42F08C}</Project>
+      <Name>DrawingUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SimulatorCommon\SimulatorCommon\SimulatorCommon.csproj">
+      <Project>{FFAC17C6-33F8-411B-9F5B-77E166C27E1B}</Project>
+      <Name>SimulatorCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SimulatorFacade\SimulatorFacade\SimulatorFacade.csproj">
+      <Project>{82F96E2B-E51C-4D58-A1B2-E0B3FB7DE9D4}</Project>
+      <Name>SimulatorFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SimOperationalService\SimOperationalService\SimOperationalService.csproj">
+      <Project>{FE667883-C346-4DBF-879E-2BD04BBF0F53}</Project>
+      <Name>SimOperationalService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SimulatorClientFacade\SimulatorClientFacade.csproj">
+      <Project>{D89B5AE4-C729-4B09-9D97-4A0A02E683EC}</Project>
+      <Name>SimulatorClientFacade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

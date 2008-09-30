@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbiterRoadNetwork", "ArbiterRoadNetwork\ArbiterRoadNetwork.csproj", "{5ED74205-2992-462F-8FC4-381CDB2E63C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbiterCommon", "..\..\ArbiterCommon\ArbiterCommon\ArbiterCommon.csproj", "{A31B04EF-5B90-440B-B5B1-2EE2972EC740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingUtilities", "..\..\..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj", "{D0D71001-2079-4383-8D6B-0DA7FD42F08C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\..\..\..\Remoting Interfaces\Common\Common.csproj", "{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarpaRndf", "..\..\..\..\Remoting Interfaces\Arbiter\DarpaRndf\DarpaRndf\DarpaRndf\DarpaRndf.csproj", "{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArbiterMissionDescription", "ArbiterMissionDescription\ArbiterMissionDescription.csproj", "{66BCCC5B-7173-4232-9307-2D3518F6E509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED74205-2992-462F-8FC4-381CDB2E63C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A31B04EF-5B90-440B-B5B1-2EE2972EC740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31B04EF-5B90-440B-B5B1-2EE2972EC740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31B04EF-5B90-440B-B5B1-2EE2972EC740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31B04EF-5B90-440B-B5B1-2EE2972EC740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D71001-2079-4383-8D6B-0DA7FD42F08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BCCC5B-7173-4232-9307-2D3518F6E509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BCCC5B-7173-4232-9307-2D3518F6E509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BCCC5B-7173-4232-9307-2D3518F6E509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BCCC5B-7173-4232-9307-2D3518F6E509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
