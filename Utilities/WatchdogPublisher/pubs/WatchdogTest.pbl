@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <watchdogAutoRestart>true</watchdogAutoRestart>
+  <watchdogName>testevent</watchdogName>
+  <watchdogPeriodms>2000</watchdogPeriodms>
+  <version>1</version>
+  <name>WatchdogTest</name>
+  <files>
+    <string>\trunk\utilities\watchdogpublisher\release\watchdogtest.exe</string>
+    <string>\trunk\utilities\watchdogpublisher\release\start.bat</string>
+  </files>
+  <relativeLocation>\WatchdogTest</relativeLocation>
+  <lastPublish>2007-09-03T18:56:13.9094399-04:00</lastPublish>
+  <commands>
+    <string>watchdogtest.exe</string>
+  </commands>
+  <started>false</started>
+</Publish>

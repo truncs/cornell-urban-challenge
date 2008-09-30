@@ -1,0 +1,200 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0988C40D-5C47-4A8F-8AD7-2A756E723EBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Remora</RootNamespace>
+    <AssemblyName>Remora</AssemblyName>
+    <ApplicationIcon>Gear.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communications\Communicator.cs" />
+    <Compile Include="Communications\MessagingListener.cs" />
+    <Compile Include="Communications\Output.cs" />
+    <Compile Include="Display\DrawingTools\CarDisplay.cs" />
+    <Compile Include="Display\DrawingTools\GoalsDisplay.cs" />
+    <Compile Include="Display\DrawingTools\GridDisplay.cs" />
+    <Compile Include="Display\DrawingTools\ObservedVehicleDisplay.cs" />
+    <Compile Include="Display\DrawingTools\PathsDisplay.cs" />
+    <Compile Include="Display\DrawingTools\PolygonDisplay.cs" />
+    <Compile Include="Display\DrawingTools\PosteriorPoseTracks.cs" />
+    <Compile Include="Display\DrawingTools\RouteDisplay.cs" />
+    <Compile Include="Display\DrawingTools\StaticObstaclesDisplay.cs" />
+    <Compile Include="Display\DrawingUtility.cs" />
+    <Compile Include="Display\Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display\Forms\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\Forms\Readme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display\Forms\Readme.Designer.cs">
+      <DependentUpon>Readme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\IDisplayObject.cs" />
+    <Compile Include="Display\Map\MdfDisplay.cs" />
+    <Compile Include="Display\Map\RndfDisplay.cs" />
+    <Compile Include="Display\Selection\HitTestResult.cs" />
+    <Compile Include="Display\Selection\SelectionMode.cs" />
+    <Compile Include="Display\WorldTransform.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="RemoraDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoraDisplay.Designer.cs">
+      <DependentUpon>RemoraDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Display\Forms\About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display\Forms\Readme.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Readme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoraDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RemoraDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display\Forms\RoadDisplay.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RoadDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Display\Forms\RoadDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Display\Forms\RoadDisplay.Designer.cs">
+      <DependentUpon>RoadDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\Vehicle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gear.ico" />
+    <Content Include="Readme.txt" />
+    <None Include="Resources\Sync.png" />
+    <None Include="Resources\Speaker.png" />
+    <None Include="Resources\LightBulb.png" />
+    <None Include="Resources\Add1.png" />
+    <None Include="Resources\NoAccess2.png" />
+    <None Include="Resources\NoAccess1.png" />
+    <None Include="Resources\Notepage.png" />
+    <None Include="Resources\buttonDisable.Image.png" />
+    <None Include="Resources\320px-Nurse_shark_with_remoras.jpg" />
+    <None Include="Resources\Component2.png" />
+    <None Include="Resources\Component.png" />
+    <None Include="Resources\CabinetOpen.png" />
+    <None Include="Resources\Connect.png" />
+    <None Include="App.config" />
+    <None Include="Resources\Car.png" />
+    <None Include="Resources\Zoom11.png" />
+    <None Include="Resources\ZoomOut.png" />
+    <None Include="Resources\ZoomIn.png" />
+    <None Include="Resources\Radioactive.png" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\NoAccess.png" />
+    <None Include="Resources\NavigateForward.png" />
+    <None Include="Resources\ConnectWait.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\GreenFlag.png" />
+    <None Include="Resources\RedFlag.png" />
+    <None Include="Resources\YellowFlag1.png" />
+    <None Include="Resources\YellowFlag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Remoting Interfaces\ArbiterRemote\ArbiterRemote\ArbiterRemote.csproj">
+      <Project>{55E46E69-D8AE-4E7C-B955-ADFD9AF98A8B}</Project>
+      <Name>ArbiterRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Remoting Interfaces\Behaviors\Behaviors.csproj">
+      <Project>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</Project>
+      <Name>Behaviors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Remoting Interfaces\MessagingService\MessagingService.csproj">
+      <Project>{19A82170-7FEE-4527-B835-A7359B864B28}</Project>
+      <Name>MessagingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Remoting Interfaces\NameService\NameService.csproj">
+      <Project>{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}</Project>
+      <Name>NameService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Remoting Interfaces\operationalService\operationalService.csproj">
+      <Project>{FBA7A699-D418-478D-BBB0-456992D8DA01}</Project>
+      <Name>operationalService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\RndfEditor\RndfEditorLight\GpsTools\GpsToolkit\RndfToolkit.csproj">
+      <Project>{385D483B-4337-430E-841E-1D304EA2ED8E}</Project>
+      <Name>RndfToolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ArbiterCommon\ArbiterCommon\ArbiterCommon.csproj">
+      <Project>{A31B04EF-5B90-440B-B5B1-2EE2972EC740}</Project>
+      <Name>ArbiterCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Arbiter\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

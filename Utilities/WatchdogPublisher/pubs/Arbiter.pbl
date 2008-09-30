@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>Arbiter</name>
+  <files>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbiteradvanced.exe</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbiteradvanced.exe.config</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbiteradvanced.vshost.exe</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbiteradvanced.vshost.exe.config</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbiteradvancedcommon.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbiteradvancedremote.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbitermissiondescription.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\arbiterroadnetwork.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\behaviors.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\common.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\common.xml</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\darparndf.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\drawingutilities.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\messagingservice.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\nameservice.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\operationalservice.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\simulatorclientfacade.dll</string>
+    <string>\trunk\arbiter\trunk\arbiteradvanced\arbiteradvanced\bin\debug\simulatorcommon.dll</string>
+  </files>
+  <relativeLocation>\Arbiter</relativeLocation>
+  <lastPublish>0001-01-01T00:00:00</lastPublish>
+  <commands>
+    <string>arbiteradvanced.exe</string>
+  </commands>
+  <started>false</started>
+</Publish>

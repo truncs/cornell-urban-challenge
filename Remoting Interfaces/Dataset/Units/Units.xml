@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ds:unitsConfig xmlns:ds="http://www.cornellracing.com/Units.xsd">
+	<ds:units>
+		<ds:unit ds:name="radians" ds:abbrev="rad" ds:category="angle"/>
+		<ds:unit ds:name="degrees" ds:abbrev="deg" ds:category="angle"/>
+		<ds:unit ds:name="celcius" ds:abbrev="C" ds:category="temperature"/>
+		<ds:unit ds:name="farenheit" ds:abbrev="F" ds:category="temperature"/>
+		<ds:unit ds:name="meters" ds:abbrev="m" ds:category="distance"/>
+		<ds:unit ds:name="millimeters" ds:abbrev="mm" ds:category="distance"/>
+		<ds:unit ds:name="centimeters" ds:abbrev="cm" ds:category="distance"/>
+		<ds:unit ds:name="kilometers" ds:abbrev="km" ds:category="distance"/>
+		<ds:unit ds:name="yards" ds:abbrev="yd" ds:category="distance"/>
+		<ds:unit ds:name="miles" ds:abbrev="mi" ds:category="distance"/>
+		<ds:unit ds:name="feet" ds:abbrev="ft" ds:category="distance"/>
+		<ds:unit ds:name="inches" ds:abbrev="in" ds:category="distance"/>
+		<ds:unit ds:name="meters/sec" ds:abbrev="m/s" ds:category="speed"/>
+		<ds:unit ds:name="miles/hour" ds:abbrev="mph" ds:category="speed"/>
+		<ds:unit ds:name="kilometers/hour" ds:abbrev="kph" ds:category="speed"/>
+		<ds:unit ds:name="feet/sec" ds:abbrev="fps" ds:category="speed"/>
+		<ds:unit ds:name="feet/min" ds:abbrev="fpm" ds:category="speed"/>
+		<ds:unit ds:name="Newton-meters" ds:abbrev="N-m" ds:category="torque"/>
+		<ds:unit ds:name="Foot-pounds" ds:abbrev="ft-lbs" ds:category="torque"/>
+		<ds:unit ds:name="Pascals" ds:abbrev="Pa" ds:category="pressure"/>
+		<ds:unit ds:name="Pounds-per-square-inch" ds:abbrev="psi" ds:category="pressure"/>
+		<ds:unit ds:name="Revolutions/minute" ds:abbrev="rpm" ds:category="angular velocity"/>
+    <ds:unit ds:name="seconds" ds:abbrev="s" ds:category="time"/>
+    <ds:unit ds:name="milliseconds" ds:abbrev="ms" ds:category="time"/>
+	</ds:units>
+	<ds:conversions>
+    <ds:conversion ds:fromUnit="seconds" ds:toUnit="milliseconds">
+      <ds:scale>1000</ds:scale>
+    </ds:conversion>
+		<ds:conversion ds:fromUnit="radians" ds:toUnit="degrees">
+			<ds:scale>57.295779513082320876798154814105</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="celcius" ds:toUnit="farenheit">
+			<ds:scale>1.8</ds:scale>
+			<ds:offset ds:order="post">32</ds:offset>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="inches" ds:toUnit="centimeters">
+			<ds:scale>2.54</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="feet" ds:toUnit="inches">
+			<ds:scale>12</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="yards" ds:toUnit="feet">
+			<ds:scale>3</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="miles" ds:toUnit="feet">
+			<ds:scale>5280</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="meters" ds:toUnit="centimeters">
+			<ds:scale>100</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="kilometers" ds:toUnit="meters">
+			<ds:scale>1000</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="centimeters" ds:toUnit="millimeters">
+			<ds:scale>10</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="meters/sec" ds:toUnit="kilometers/hour">
+			<ds:scale>3.6</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="kilometers/hour" ds:toUnit="miles/hour">
+			<ds:scale>0.621371192</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="feet/sec" ds:toUnit="miles/hour">
+			<ds:scale>0.6818181818182</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="feet/min" ds:toUnit="feet/sec">
+			<ds:scale>60</ds:scale>
+		</ds:conversion>
+		<ds:conversion ds:fromUnit="Newton-meters" ds:toUnit="Foot-pounds">
+			<ds:scale>0.737562147</ds:scale>
+		</ds:conversion>
+	</ds:conversions>
+</ds:unitsConfig>

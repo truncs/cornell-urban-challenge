@@ -1,0 +1,15 @@
+MDF_name	
+RNDF_name	
+creation_date	10/28/2007 11:36:55 AM
+checkpoints
+num_checkpoints	2
+3
+1
+end_checkpoints
+speed_limits
+num_speed_limits	3
+1	5	30
+2	5	30
+3	5	30
+end_speed_limits
+end_file

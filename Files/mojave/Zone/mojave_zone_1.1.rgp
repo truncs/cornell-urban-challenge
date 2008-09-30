@@ -1,0 +1,644 @@
+RndfName	mojave_zone
+RndfCreationDate	2007-10-20
+RoadGraphCreationDate	10/23/2007 8:47:06 AM
+ProjectionOrigin	35.057567	-118.165592
+NumberOfWaypoints	32
+Waypoints
+3.0.1	IsNotStop	-38.000457	28.641048
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.2	IsNotStop	17.472791	32.568320
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.3	IsNotStop	20.601769	32.612703
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.4	IsNotStop	22.189106	15.427848
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.5	IsNotStop	12.975478	15.993632
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.6	IsNotStop	-0.096926	15.427820
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.7	IsNotStop	-6.382265	9.947306
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.8	IsNotStop	-7.914837	2.247958
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.9	IsNotStop	-7.869231	-5.595615
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.10	IsNotStop	-6.674203	-18.376091
+NumberOfMemberPartitions	2
+MemberPartitions
+3
+1.1.1.7-3.0.10
+EndMemberPartitions
+3.0.11	IsNotStop	-6.957004	-25.676050
+NumberOfMemberPartitions	2
+MemberPartitions
+3
+3.0.11-2.1.1.1
+EndMemberPartitions
+3.0.12	IsNotStop	-25.028561	-23.512657
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.0.13	IsNotStop	-43.464969	-13.405805
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.1.1	IsNotStop	19.196935	26.322309
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.1.2	IsNotStop	18.923256	29.717122
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.2.1	IsNotStop	-1.912282	25.689922
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.2.2	IsNotStop	-3.452104	29.945061
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.3.1	IsNotStop	-4.676366	26.411043
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.3.2	IsNotStop	-6.265143	29.557056
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.4.1	IsNotStop	-7.568167	23.914858
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+3.4.2	IsNotStop	-9.660192	29.266052
+NumberOfMemberPartitions	1
+MemberPartitions
+3
+EndMemberPartitions
+1.1.1.1	IsNotStop	29.496270	-21.360376
+NumberOfMemberPartitions	1
+MemberPartitions
+1.1.1.1
+EndMemberPartitions
+1.1.1.2	IsNotStop	24.579275	-21.249449
+NumberOfMemberPartitions	2
+MemberPartitions
+1.1.1.2
+1.1.1.1
+EndMemberPartitions
+1.1.1.3	IsNotStop	18.567586	-21.105239
+NumberOfMemberPartitions	2
+MemberPartitions
+1.1.1.3
+1.1.1.2
+EndMemberPartitions
+1.1.1.4	IsNotStop	12.263980	-20.827895
+NumberOfMemberPartitions	2
+MemberPartitions
+1.1.1.4
+1.1.1.3
+EndMemberPartitions
+1.1.1.5	IsNotStop	6.544210	-20.550547
+NumberOfMemberPartitions	2
+MemberPartitions
+1.1.1.5
+1.1.1.4
+EndMemberPartitions
+1.1.1.6	IsNotStop	1.399154	-20.306478
+NumberOfMemberPartitions	2
+MemberPartitions
+1.1.1.6
+1.1.1.5
+EndMemberPartitions
+1.1.1.7	IsNotStop	0.240604	-20.228819
+NumberOfMemberPartitions	2
+MemberPartitions
+1.1.1.6
+1.1.1.7-3.0.10
+EndMemberPartitions
+2.1.1.1	IsNotStop	-8.133802	-27.972541
+NumberOfMemberPartitions	2
+MemberPartitions
+2.1.1.1
+3.0.11-2.1.1.1
+EndMemberPartitions
+2.1.1.2	IsNotStop	-8.142927	-31.511579
+NumberOfMemberPartitions	2
+MemberPartitions
+2.1.1.2
+2.1.1.1
+EndMemberPartitions
+2.1.1.3	IsNotStop	-8.288892	-37.624462
+NumberOfMemberPartitions	2
+MemberPartitions
+2.1.1.3
+2.1.1.2
+EndMemberPartitions
+2.1.1.4	IsNotStop	-8.608186	-45.590070
+NumberOfMemberPartitions	1
+MemberPartitions
+2.1.1.3
+EndMemberPartitions
+End_Waypoints
+NumberOfPartitions	12
+Partition
+PartitionId	1.1.1.1
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	3.119037
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.1
+1.1.1.2
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	2
+LaneAdjacentPartitions
+1.1.1.1
+1.1.1.2
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	8
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	1.1.1.2
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	3.117609
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.2
+1.1.1.3
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+1.1.1.2
+1.1.1.1
+1.1.1.3
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	11
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	1.1.1.3
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	3.097623
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.3
+1.1.1.4
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+1.1.1.3
+1.1.1.2
+1.1.1.4
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	12
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	1.1.1.4
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	3.093141
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.4
+1.1.1.5
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+1.1.1.4
+1.1.1.3
+1.1.1.5
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	12
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	1.1.1.5
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	3.094191
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.5
+1.1.1.6
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+1.1.1.5
+1.1.1.4
+1.1.1.6
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	12
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	1.1.1.6
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	3.074662
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.6
+1.1.1.7
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+1.1.1.6
+1.1.1.5
+1.1.1.7-3.0.10
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	12
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	2.1.1.1
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	-1.573375
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+2.1.1.1
+2.1.1.2
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+2.1.1.1
+3.0.11-2.1.1.1
+2.1.1.2
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	11
+NearbyPartitions
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	2.1.1.2
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	-1.594670
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+2.1.1.2
+2.1.1.3
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+2.1.1.2
+2.1.1.1
+2.1.1.3
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	11
+NearbyPartitions
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	2.1.1.3
+PartitionType	Lane
+Sparse	False
+FitType	Line
+FitParameters	-1.610859
+LaneWidth	4.013200
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+2.1.1.3
+2.1.1.4
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	2
+LaneAdjacentPartitions
+2.1.1.3
+2.1.1.2
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	10
+NearbyPartitions
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	3.0.11-2.1.1.1
+PartitionType	Interconnect
+Sparse	False
+FitType	Line
+FitParameters	-2.044341
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+3.0.11
+2.1.1.1
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+3.0.11-2.1.1.1
+3
+2.1.1.1
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	11
+NearbyPartitions
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	1.1.1.7-3.0.10
+PartitionType	Interconnect
+Sparse	False
+FitType	Line
+FitParameters	2.879805
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	2
+Points
+1.1.1.7
+3.0.10
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+1.1.1.7-3.0.10
+1.1.1.6
+3
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	12
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+Partition
+PartitionId	3
+PartitionType	Zone
+Sparse	False
+FitType	Polygon
+FitParameters	13	-38.000457	28.641048	17.472791	32.568320	20.601769	32.612703	22.189106	15.427848	12.975478	15.993632	-0.096926	15.427820	-6.382265	9.947306	-7.914837	2.247958	-7.869231	-5.595615	-6.674203	-18.376091	-6.957004	-25.676050	-25.028561	-23.512657	-43.464969	-13.405805
+LeftBoundary	None
+RightBoundary	None
+NumberOfPoints	13
+Points
+3.0.1
+3.0.2
+3.0.3
+3.0.4
+3.0.5
+3.0.6
+3.0.7
+3.0.8
+3.0.9
+3.0.10
+3.0.11
+3.0.12
+3.0.13
+End_Points
+NumberOfNearbyStoplines	0
+NumberOfLaneAdjacentPartitions	3
+LaneAdjacentPartitions
+3
+1.1.1.7-3.0.10
+3.0.11-2.1.1.1
+End_LaneAdjacentPartitions
+NumberOfLeftLaneAdjacentPartitions	0
+NumberOfRightLaneAdjacentPartitions	0
+NumberOfNearbyPartitions	12
+NearbyPartitions
+1.1.1.1
+1.1.1.2
+1.1.1.3
+1.1.1.4
+1.1.1.5
+1.1.1.6
+2.1.1.1
+2.1.1.2
+2.1.1.3
+3.0.11-2.1.1.1
+1.1.1.7-3.0.10
+3
+End_NearbyPartitions
+End_Partition
+End_Rndf

@@ -1,0 +1,17 @@
+Remora:
+- keep track of route distance as well as time? (i guess we could extrapolate this on the remora side)
+- multiple routes display?
+- display of all ArbiterInformation info
+
+Errors:
+- Uturn barf when stuck outside bounds by tiny bit
+- Uturn barf when boundaries too large and can't find min radius circle that matches end tangent. loops around
+- Navigation oscillation when in same lane as goal
+
+Other:
+- use lane width for uturns if available
+- use stopwatch to find bad kludges, ok for now
+
+Notes:
+Shop - 1775 hanshaw rd.
+c

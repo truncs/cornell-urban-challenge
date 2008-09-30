@@ -1,0 +1,259 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;_GRID_UNSAFE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCE5B045-B3E0-453C-BD3E-337D36A8DEAD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OperationalLayer</RootNamespace>
+    <AssemblyName>Operational</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Common\poseInterface\PoseClient.cs">
+      <Link>Pose\PoseClient.cs</Link>
+    </Compile>
+    <Compile Include="ActController\ActuationTransport.cs" />
+    <Compile Include="CarTime\ICarTimeProvider.cs" />
+    <Compile Include="CarTime\LocalCarTimeProvider.cs" />
+    <Compile Include="CarTime\UdpCarTimeProvider.cs" />
+    <Compile Include="Communications\CommBuilder.cs" />
+    <Compile Include="Communications\DebuggingService.cs" />
+    <Compile Include="Communications\OperationalService.cs" />
+    <Compile Include="Communications\SceneEstimatorListener.cs" />
+    <Compile Include="Communications\UIService.cs" />
+    <Compile Include="Obstacles\Grid.cs" />
+    <Compile Include="Obstacles\GridOccupancy.cs" />
+    <Compile Include="Obstacles\Obstacle.cs" />
+    <Compile Include="Obstacles\ObstacleCollection.cs" />
+    <Compile Include="Obstacles\ObstacleManager.cs" />
+    <Compile Include="Obstacles\ObstaclePipeline.cs" />
+    <Compile Include="Obstacles\ObstacleUtilities.cs" />
+    <Compile Include="Obstacles\RoadBearing.cs" />
+    <Compile Include="Obstacles\RoadEdge.cs" />
+    <Compile Include="Obstacles\StaticObstacles.cs" />
+    <Compile Include="OperationalBehaviors\BehaviorManager.cs" />
+    <Compile Include="OperationalBehaviors\ChangeLanes.cs" />
+    <Compile Include="OperationalBehaviors\HoldBrake.cs" />
+    <Compile Include="OperationalBehaviors\IOperationalBehavior.cs" />
+    <Compile Include="OperationalBehaviors\PlanningBase.cs" />
+    <Compile Include="OperationalBehaviors\SimpleStayInLane.cs" />
+    <Compile Include="OperationalBehaviors\StayInLane.cs" />
+    <Compile Include="OperationalBehaviors\SupraStayInLane.cs" />
+    <Compile Include="OperationalBehaviors\Turn.cs" />
+    <Compile Include="OperationalBehaviors\UTurn.cs" />
+    <Compile Include="OperationalBehaviors\ZoneBase.cs" />
+    <Compile Include="OperationalBehaviors\ZoneParkingBase.cs" />
+    <Compile Include="OperationalBehaviors\ZoneTravel.cs" />
+    <Compile Include="OperationalBuilder.cs" />
+    <Compile Include="PathPlanning\PathPlanner.cs" />
+    <Compile Include="PathPlanning\PathPoint.cs" />
+    <Compile Include="PathPlanning\PlanningResult.cs" />
+    <Compile Include="PathPlanning\PlanningSettings.cs" />
+    <Compile Include="PathPlanning\SmoothedPath.cs" />
+    <Compile Include="PathPlanning\SparseArcVoting.cs" />
+    <Compile Include="PathPlanning\SpeedPostProcess.cs" />
+    <Compile Include="PathPlanning\ZoneArcVoting.cs" />
+    <Compile Include="Pose\AbsolutePoseQueue.cs" />
+    <Compile Include="Pose\HeadingBiasEstimator.cs" />
+    <Compile Include="Pose\PoseListener.cs" />
+    <Compile Include="Pose\StopLineService.cs" />
+    <Compile Include="Pose\TrackedDistance.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RoadModel\CombinedLaneModel.cs" />
+    <Compile Include="RoadModel\CombinedRoadModelProvider.cs" />
+    <Compile Include="RoadModel\ILaneModel.cs" />
+    <Compile Include="RoadModel\LaneModelProvider.cs" />
+    <Compile Include="RoadModel\LinearizationOptions.cs" />
+    <Compile Include="RoadModel\PathLaneModel.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Sim\FullSimTransport.cs" />
+    <Compile Include="TimeoutMonitor.cs" />
+    <Compile Include="Tracing\OperationalTrace.cs" />
+    <Compile Include="Tracking\CarModeChangedEventArgs.cs" />
+    <Compile Include="Tracking\ChainedTrackingCommand.cs" />
+    <Compile Include="Tracking\CompletionResult.cs" />
+    <Compile Include="Tracking\ICommandTransport.cs" />
+    <Compile Include="Tracking\ITrackingCommand.cs" />
+    <Compile Include="Tracking\ITrackingCommandBase.cs" />
+    <Compile Include="Tracking\NullCommandTransport.cs" />
+    <Compile Include="Tracking\NullTrackingCommand.cs" />
+    <Compile Include="Tracking\SpeedControl\ConstantAccelSpeedGenerator.cs" />
+    <Compile Include="Tracking\SpeedControl\ConstantSpeedCommandGenerator.cs" />
+    <Compile Include="Tracking\SpeedControl\ConstantSpeedGenerator.cs" />
+    <Compile Include="Tracking\SpeedControl\FeedbackSpeedCommandGenerator.cs" />
+    <Compile Include="Tracking\SpeedControl\IDistanceProvider.cs" />
+    <Compile Include="Tracking\SpeedControl\ISpeedCommandGenerator.cs" />
+    <Compile Include="Tracking\SpeedControl\ISpeedGenerator.cs" />
+    <Compile Include="Tracking\SpeedControl\PathDistanceProvider.cs" />
+    <Compile Include="Tracking\SpeedControl\ShiftSpeedCommand.cs" />
+    <Compile Include="Tracking\SpeedControl\StoplineDistanceProvider.cs" />
+    <Compile Include="Tracking\SpeedControl\StopSpeedGenerator.cs" />
+    <Compile Include="Tracking\SpeedControl\TravelledDistanceProvider.cs" />
+    <Compile Include="Tracking\Steering\ChainedSteeringCommandGenerator.cs" />
+    <Compile Include="Tracking\Steering\ConstantSteeringCommandGenerator.cs" />
+    <Compile Include="Tracking\Steering\CurvaturePathFollowing.cs" />
+    <Compile Include="Tracking\Steering\IRelativePath.cs" />
+    <Compile Include="Tracking\Steering\ISteeringCommandGenerator.cs" />
+    <Compile Include="Tracking\Steering\PathSteeringCommandGenerator.cs" />
+    <Compile Include="Tracking\Steering\PointOnPath.cs" />
+    <Compile Include="Tracking\Steering\SinSteeringCommandGenerator.cs" />
+    <Compile Include="Tracking\Steering\SteeringControlData.cs" />
+    <Compile Include="Tracking\Steering\SteeringControlDataOptions.cs" />
+    <Compile Include="Tracking\Steering\SteeringUtilities.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="Tracking\SpeedControl\SpeedController.cs" />
+    <Compile Include="Tracking\SpeedControl\SpeedControllerConfig.cs" />
+    <Compile Include="Tracking\SpeedControl\SpeedUtilities.cs" />
+    <Compile Include="Tracking\TrackingCommand.cs" />
+    <Compile Include="Tracking\TrackingCommandBuilder.cs" />
+    <Compile Include="Tracking\TrackingData.cs" />
+    <Compile Include="Tracking\TrackingManager.cs" />
+    <Compile Include="Tracking\TrackingManagerEventArgs.cs" />
+    <Compile Include="Utilities\LaneSpeedHelper.cs" />
+    <Compile Include="Pose\AbsolutePose.cs" />
+    <Compile Include="Pose\AbsoluteTransformer.cs" />
+    <Compile Include="Pose\OperationalVehicleState.cs" />
+    <Compile Include="Pose\VehicleStateProvider.cs" />
+    <Compile Include="Utilities\ObstacleUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\arbiter\trunk\ArbiterAdvancedCommon\ArbiterAdvancedCommon\ArbiterAdvancedCommon.csproj">
+      <Project>{403377CB-5F6F-4728-B043-E49EACB645D5}</Project>
+      <Name>ArbiterAdvancedCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\arbiter\trunk\ArbiterAdvancedRemote\ArbiterAdvancedRemote\ArbiterAdvancedRemote.csproj">
+      <Project>{F8BFBD51-58F9-41AF-82F4-2C18FB4195C3}</Project>
+      <Name>ArbiterAdvancedRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\arbiter\trunk\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork.csproj">
+      <Project>{5ED74205-2992-462F-8FC4-381CDB2E63C4}</Project>
+      <Name>ArbiterRoadNetwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Actuation\Actuation.csproj">
+      <Project>{7A5C3426-75C9-4C46-AA64-DA7502E5C315}</Project>
+      <Name>Actuation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\Arbiter\DarpaRndf\DarpaRndf\DarpaRndf\DarpaRndf.csproj">
+      <Project>{AC2D3BEF-757A-43BE-9A54-273CD6A7916B}</Project>
+      <Name>DarpaRndf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\Behaviors\Behaviors.csproj">
+      <Project>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</Project>
+      <Name>Behaviors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\Dataset\Dataset.csproj">
+      <Project>{E2AE124D-0E64-440F-AD3D-B7F1ABBDFD76}</Project>
+      <Name>Dataset</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\MessagingService\MessagingService.csproj">
+      <Project>{19A82170-7FEE-4527-B835-A7359B864B28}</Project>
+      <Name>MessagingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\NameService\NameService.csproj">
+      <Project>{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}</Project>
+      <Name>NameService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Remoting Interfaces\operationalService\OperationalService.csproj">
+      <Project>{FBA7A699-D418-478D-BBB0-456992D8DA01}</Project>
+      <Name>OperationalService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj">
+      <Project>{D0D71001-2079-4383-8D6B-0DA7FD42F08C}</Project>
+      <Name>DrawingUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Simulation\trunk\SimulatorClient\SimOperationalService\SimOperationalService\SimOperationalService.csproj">
+      <Project>{FE667883-C346-4DBF-879E-2BD04BBF0F53}</Project>
+      <Name>SimOperationalService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Simulation\trunk\SimulatorClient\SimulatorClientFacade\SimulatorClientFacade.csproj">
+      <Project>{D89B5AE4-C729-4B09-9D97-4A0A02E683EC}</Project>
+      <Name>SimulatorClientFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilities\WatchdogPublisher\WatchdogAPI\WatchdogAPI.csproj">
+      <Project>{4A9A2666-3369-4DAE-AA6D-CF18C7233D2C}</Project>
+      <Name>WatchdogAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utilities\WatchdogPublisher\WatchdogCommunication\WatchdogCommunication.csproj">
+      <Project>{3A451BBF-D96E-44E0-B988-9CF0A9DC0B36}</Project>
+      <Name>WatchdogCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperationalCommon\OperationalCommon.csproj">
+      <Project>{966A29D8-F866-4BAC-847D-1FFE30061FCD}</Project>
+      <Name>OperationalCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OperationalUIService\OperationalUIService.csproj">
+      <Project>{10E8E827-09F3-4049-BFDE-23BD19F99807}</Project>
+      <Name>OperationalUIService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PathSmoother\PathSmoother\PathSmoother.vcproj">
+      <Project>{586AB992-1675-4F38-BC9C-116829131145}</Project>
+      <Name>PathSmoother</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActController\FeedbackMapping.xml" />
+    <Content Include="net.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

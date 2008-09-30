@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>Pose</name>
+  <files>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\egm96_to360_ascii.txt</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\libacml_dll.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\libacml_mp_dll.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\libacml_mv_dll.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\libguide40.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\libifcoremd.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\libmmd.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\matreader.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\messagingservice.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\nameservice.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\pgc.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\pgftnrtl.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\pgmp.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\poseestimator.exe</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\posestatus.dll</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\remoting.config</string>
+    <string>\trunk\poseestimator\poseestimator\x64\release - real-time\zlibwapi64.dll</string>
+  </files>
+  <relativeLocation>\Pose</relativeLocation>
+  <lastPublish>2007-09-02T23:19:47.73925-04:00</lastPublish>
+  <commands>
+    <string>PoseEstimator.exe</string>
+  </commands>
+  <started>false</started>
+</Publish>

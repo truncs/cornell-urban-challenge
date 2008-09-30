@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>Scene Estimator 2</name>
+  <files>
+    <string>\trunk\scene estimator 2\seed.txt</string>
+    <string>\trunk\scene estimator 2\release\common.dll</string>
+    <string>\trunk\scene estimator 2\release\libacml_dll.dll</string>
+    <string>\trunk\scene estimator 2\release\messagingservice.dll</string>
+    <string>\trunk\scene estimator 2\release\nameservice.dll</string>
+    <string>\trunk\scene estimator 2\release\pgc.dll</string>
+    <string>\trunk\scene estimator 2\release\pgftnrtl.dll</string>
+    <string>\trunk\scene estimator 2\release\scene estimator ii.exe</string>
+    <string>\trunk\scene estimator 2\release\common.dll</string>
+    <string>\trunk\scene estimator 2\release\libacml_dll.dll</string>
+    <string>\trunk\scene estimator 2\release\messagingservice.dll</string>
+    <string>\trunk\scene estimator 2\release\nameservice.dll</string>
+    <string>\trunk\scene estimator 2\release\pgc.dll</string>
+    <string>\trunk\scene estimator 2\release\pgftnrtl.dll</string>
+    <string>\trunk\scene estimator 2\release\scene estimator ii.exe</string>
+    <string>\trunk\scene estimator 2\release\common.dll</string>
+    <string>\trunk\scene estimator 2\release\libacml_dll.dll</string>
+    <string>\trunk\scene estimator 2\release\messagingservice.dll</string>
+    <string>\trunk\scene estimator 2\release\nameservice.dll</string>
+    <string>\trunk\scene estimator 2\release\pgc.dll</string>
+    <string>\trunk\scene estimator 2\release\pgftnrtl.dll</string>
+    <string>\trunk\scene estimator 2\release\scene estimator ii.exe</string>
+    <string>\trunk\files\seneca_full.rgp</string>
+    <string>\trunk\files\seneca_full_1-5.rgp</string>
+    <string>\trunk\files\seneca_sitevisit.rgp</string>
+    <string>\trunk\files\seneca_sitevisit_sparse.rgp</string>
+    <string>\trunk\scene estimator 2\remoting.config</string>
+  </files>
+  <relativeLocation>\Scene Estimator 2</relativeLocation>
+  <lastPublish>2007-09-03T11:51:36.80175-04:00</lastPublish>
+  <commands>
+    <string>scene estimator ii.exe C:\publish\Scene Estimator 2\Seneca_Full_1-5.rgp E:\logs\</string>
+  </commands>
+  <started>false</started>
+</Publish>

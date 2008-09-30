@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<feedbackMapping xmlns="http://www.cornellracing.com/FeedbackMapping.xsd">
+  <feedbackType name="carmode" id="1" method="OnCarMode">
+    <field name="carmode" intype="u8" outtype="UrbanChallenge.Common.CarMode, Common">
+      <enum>
+        <value in="0" outenum="Unknown"/>
+        <value in="1" outenum="EStop"/>
+        <value in="2" outenum="Pause"/>
+        <value in="3" outenum="Run"/>
+        <value in="4" outenum="TransitioningFromPause"/>
+        <value in="5" outenum="Human"/>
+        <value in="default" outenum="Unknown"/>
+      </enum>
+    </field>
+  </feedbackType>
+  <feedbackType name="init" id="0">
+    <field name="unit" intype="u8" outtype="int">
+      <intMap>
+        <value in="8" outint="8"/> <!--CAN/main-->
+        <value in="2" outint="2"/> <!--steering-->
+        <value in="3" outint="3"/> <!--transmission-->
+        <value in="4" outint="4"/> <!--throttle-->
+        <value in="5" outint="5"/> <!--brake-->
+      </intMap>
+    </field>
+  </feedbackType>
+  <feedbackType name="fault" id="21">
+    <field name="unit" intype="u8" outtype="int">
+      <intMap>
+        <value in="8" outint="8"/> <!--CAN/main-->
+        <value in="2" outint="2"/> <!--steering-->
+        <value in="3" outint="3"/> <!--transmission-->
+        <value in="4" outint="4"/> <!--throttle-->
+        <value in="5" outint="5"/> <!--brake-->
+      </intMap>
+    </field>
+  </feedbackType>
+  <!--
+  <feedbackType name="raw wheelspeed" id="23">
+    <field name="raw ws count (fl)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="raw ws count (fr)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="raw ws count (rr)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="raw ws count (rl)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="raw ws time secs (front)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="raw ws time ticks (front)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="raw ws time secs (rear)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="raw ws time ticks (rear)" intype="u16" outtype="int">
+      <raw/>
+    </field>
+    <field name="ws flags" intype="u8" outtype="UrbanChallenge.Actuation.WheelspeedValidityFlags, Actuation">
+      <bitfield>
+        <bit fieldname="fl_reset"/>
+        <bit fieldname="fl_valid"/>
+        <bit fieldname="fr_reset"/>
+        <bit fieldname="fr_valid"/>
+        <bit fieldname="rr_reset"/>
+        <bit fieldname="rr_valid"/>
+        <bit fieldname="rl_reset"/>
+        <bit fieldname="rl_valid"/>
+      </bitfield>
+    </field>
+  </feedbackType>
+  -->
+  <feedbackType name="status" id="7" method ="OnActuationStatus">
+    <field name="version" intype="s32" outtype="int">
+      <raw/>
+    </field>
+    <field name="carmode" intype="u8" outtype="UrbanChallenge.Common.CarMode, Common">
+      <enum>
+        <value in="0" outenum="Unknown"/>
+        <value in="1" outenum="EStop"/>
+        <value in="2" outenum="Pause"/>
+        <value in="3" outenum="Run"/>
+        <value in="4" outenum="TransitioningFromPause"/>
+        <value in="5" outenum="Human"/>
+        <value in="default" outenum="Unknown"/>
+      </enum>
+    </field>
+    <field name="steering active" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+    <field name="steering bypass" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+    <field name="trans active" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+    <field name="trans bypass" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+    <field name="throttle active" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+    <field name="throttle bypass" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+    <field name="brake active" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+    <field name="brake bypass" intype="u8" outtype="bool">
+      <bool/>
+    </field>
+  </feedbackType>
+  <feedbackType name="AllFast" id="20" method="OnAllFast">
+    <field name="wheelspeed (front left)" intype="u16" outtype="double"  dsitem ="front left wheelspeed">
+      <conversion>
+        <scale>0.03125</scale>
+      </conversion>
+    </field>
+    <field name="wheelspeed (front right)" intype="u16" outtype="double" dsitem ="front right wheelspeed">
+      <conversion>
+        <scale>0.03125</scale>
+      </conversion>
+    </field>
+    <field name="wheelspeed (rear right)" intype="u16" outtype="double" dsitem ="rear right wheelspeed">
+      <conversion>
+        <scale>0.03125</scale>
+      </conversion>
+    </field>
+    <field name="wheelspeed (rear left)" intype="u16" outtype="double" dsitem ="rear left wheelspeed">
+      <conversion>
+        <scale>0.03125</scale>
+      </conversion>
+    </field>
+    <field name="rpm" intype="u16" outtype="double" dsitem="rpm">
+      <conversion>
+        <scale>0.25</scale>
+      </conversion>
+    </field>
+    <field name="actual steering" intype="s16" outtype="double" dsitem="actual steering">
+      <conversion>
+        <scale>0.0010908307824964559855773067303054</scale>
+      </conversion>
+    </field>
+    <field name="actual trans gear" intype="u8" outtype="UrbanChallenge.Common.Vehicle.TransmissionGear, Common" dsitem="transmission gear">
+      <enum>
+        <value in="1" outenum="First"/>
+        <value in="2" outenum="Second"/>
+        <value in="3" outenum="Third"/>
+        <value in="4" outenum="Fourth"/>
+        <value in="13" outenum="Neutral"/>
+        <value in="14" outenum="Reverse"/>
+        <value in="15" outenum="Park"/>
+        <value in="default" outenum="Neutral"/>
+      </enum>
+    </field>
+    <field name="actual trans direction" intype="u8" outtype="int" dsitem="actual trans direction">
+      <intMap>
+        <value in="0" outint="0"/>
+        <value in="1" outint="1"/>
+        <value in="2" outint="2"/>
+        <value in="default" outint="-1"/>
+      </intMap>
+    </field>
+    <field name="actual engine torque" intype="u16" outtype="double" dsitem="engine torque">
+      <conversion>
+        <scale>0.25</scale>
+        <offset order="post">-200</offset>
+      </conversion>
+    </field>
+    <field name="actual requested engine torque" intype="u16" outtype="double" dsitem="actual requested engine torque">
+      <conversion>
+        <scale>0.25</scale>
+        <offset order="post">-200</offset>
+      </conversion>
+    </field>
+    <field name="actual cylinder deactivation" intype="u8" outtype="int" dsitem="actual cylinder deactivation">
+      <intMap>
+        <value in="0" outint="0"/>
+        <value in="1" outint="1"/>
+        <value in="2" outint="2"/>
+        <value in="3" outint="3"/>
+        <value in="default" outint="-1"/>
+      </intMap>
+    </field>
+    <field name="actual pedal position" intype="u8" outtype="int" dsitem="actual pedal position">
+      <conversion>
+        <scale>0.003921568627450980392156862745098</scale>
+      </conversion>
+    </field>
+    <field name="actual brake pressure" intype="u8" outtype="double">
+      <conversion>
+        <scale>1</scale>
+      </conversion>
+    </field>
+  </feedbackType>
+</feedbackMapping>

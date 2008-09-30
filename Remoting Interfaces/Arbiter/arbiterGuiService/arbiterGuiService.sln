@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arbiterGuiService", "arbiterGuiService\arbiterGuiService.csproj", "{9063CD93-C370-444A-8E0B-CE4EED2118DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9063CD93-C370-444A-8E0B-CE4EED2118DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9063CD93-C370-444A-8E0B-CE4EED2118DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9063CD93-C370-444A-8E0B-CE4EED2118DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9063CD93-C370-444A-8E0B-CE4EED2118DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

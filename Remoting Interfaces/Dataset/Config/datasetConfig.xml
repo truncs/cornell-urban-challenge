@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ds:dataItems xmlns:ds="http://www.cornellracing.com/datasetConfig.xsd" xmlns:st="http://www.cornellracing.com/specialTypeConfig.xsd">
+  <ds:dataItemGroup ds:name="operational">
+    <ds:dataItem ds:name="xy"                         ds:type="coordinates" ds:units="m" ds:specialType="mapfields"/>
+    <ds:dataItem ds:name="speed"                      ds:type="double" ds:units="m/s"/>
+    <ds:dataItem ds:name="heading"                    ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="actual steering"            ds:type="double" ds:maxEntries="100" ds:units="radians"/>
+    <ds:dataItem ds:name="transmission gear"          ds:type="UrbanChallenge.Common.Vehicle.TransmissionGear, Common"/>
+    <ds:dataItem ds:name="trans gear change time"     ds:type="datetime"/>
+    <ds:dataItem ds:name="rpm"                        ds:type="double"/>
+    <ds:dataItem ds:name="engine torque"              ds:type="double"/>
+    <ds:dataItem ds:name="brake pressure"             ds:type="double"/>
+    <ds:dataItem ds:name="roll"                       ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="pitch"                      ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="altitude"                   ds:type="double" ds:units="m"/>
+    <ds:dataItem ds:name="gps xy"                     ds:type="coordinates" ds:units="m"/>
+    <ds:dataItem ds:name="hp xy"											ds:type="coordinates" ds:units="m"/>
+    <ds:dataItem ds:name="posterior pose"             ds:type="coordinates"/>
+    <ds:dataItem ds:name="posterior heading"          ds:type="double"/>
+    <ds:dataItem ds:name="pedal position"             ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="heading bias"               ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="vel heading"                ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="delta steering sigma"       ds:type="double"/>
+
+    <ds:dataItem ds:name="trans bypassed"             ds:type="bool" />
+
+    <ds:dataItem ds:name="path point"                 ds:type="coordinates"/>
+    <ds:dataItem ds:name="lookahead point"            ds:type="coordinates"/>
+    <ds:dataItem ds:name="offtrack error"             ds:type="double" ds:units="m"/>
+    <ds:dataItem ds:name="heading error"              ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="target curvature"           ds:type="double"/>
+    <ds:dataItem ds:name="speed - int error"          ds:type="double"/>
+    <ds:dataItem ds:name="speed - d error"            ds:type="double"/>
+    <ds:dataItem ds:name="torque multiplier"          ds:type="double"/>
+
+		<ds:dataItem ds:name="smoother spacing adjust"		ds:type="double"/>
+		<ds:dataItem ds:name="extra spacing"							ds:type="double"/>
+
+		<ds:dataItem ds:name="behavior string"						ds:type="string"/>
+    <ds:dataItem ds:name="time to collision"          ds:type="double" ds:units="s"/>
+    <ds:dataItem ds:name="scalar speed"               ds:type="double" ds:units="m/s"/>
+    <ds:dataItem ds:name="planning cycle time"        ds:type="double" ds:units="s"/>
+
+    <ds:dataItem ds:name="wheelspeed (rear left)"     ds:type="double" ds:units="kph"/>
+    <ds:dataItem ds:name="wheelspeed (rear right)"    ds:type="double" ds:units="kph"/>
+    <ds:dataItem ds:name="wheelspeed (front right)"   ds:type="double" ds:units="kph"/>
+    <ds:dataItem ds:name="wheelspeed (front left)"    ds:type="double" ds:units="kph"/>
+
+    <ds:dataItem ds:name="commanded speed"            ds:type="double" ds:units="m/s"/>
+    <ds:dataItem ds:name="commanded ackerman angle"   ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="commanded steering"         ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="commanded engine torque"    ds:type="double" ds:units="N-m"/>
+    <ds:dataItem ds:name="commanded brake pressure"   ds:type="double" ds:units="Pa"/>
+    <ds:dataItem ds:name="commanded curvature"        ds:type="double"/>
+    <ds:dataItem ds:name="requested acceleration"     ds:type="double"/>
+    <ds:dataItem ds:name="requested stop distance"    ds:type="double" ds:units="m"/>
+
+    <ds:dataItem ds:name="speed command"              ds:type="string"/>
+    <ds:dataItem ds:name="commanded stop distance"    ds:type="double" ds:units="m"/>
+    <ds:dataItem ds:name="stop target speed"          ds:type="double" ds:units="m/s"/>
+
+    <ds:dataItem ds:name="stopline found"             ds:type="bool"/>
+    <ds:dataItem ds:name="stopline distance"          ds:type="double" ds:units="m"/>
+    <ds:dataItem ds:name="stopline variance"          ds:type="double"/>
+
+    <ds:dataItem ds:name="vel - y"                    ds:type="double" ds:units="m/s"/>
+    <ds:dataItem ds:name="ba - x"                     ds:type="double"/>
+    <ds:dataItem ds:name="ba - y"                     ds:type="double"/>
+    <ds:dataItem ds:name="ba - z"                     ds:type="double"/>
+    <ds:dataItem ds:name="bw - x"                     ds:type="double"/>
+    <ds:dataItem ds:name="bw - y"                     ds:type="double"/>
+		<ds:dataItem ds:name="bw - z"                     ds:type="double"/>
+		<ds:dataItem ds:name="correction mode"						ds:type="UrbanChallenge.Common.Pose.PoseCorrectionMode, Common"/>
+
+    <ds:dataItem ds:name="uturn circle"               ds:type="circle"/>
+    <ds:dataItem ds:name="uturn stop point"           ds:type="coordinates"/>
+    <ds:dataItem ds:name="uturn polygon"              ds:type="polygon"/>
+    <ds:dataItem ds:name="parking path"               ds:type="circlesegment"/>
+
+    <ds:dataItem ds:name="planned path"               ds:type="path"/>
+
+    <ds:dataItem ds:name="speed - Rr"									ds:type="double"/>
+    <ds:dataItem ds:name="speed - ra"									ds:type="double"/>
+    <ds:dataItem ds:name="speed - pitch"							ds:type="double"/>
+    <ds:dataItem ds:name="speed - drag"								ds:type="double"/>
+    <ds:dataItem ds:name="speed - wheel torque"				ds:type="double"/>
+    <ds:dataItem ds:name="speed - eng torque"					ds:type="double"/>
+
+    <ds:dataItem ds:name="sep heading"                ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="sep pitch"                  ds:type="double" ds:units="rad"/>
+    <ds:dataItem ds:name="sep roll"                   ds:type="double" ds:units="rad"/>
+
+    <ds:dataItem ds:name="left lane"									ds:type="UrbanChallenge.Operational.Common.LocalLaneModel, OperationalCommon" ds:specialType="mapfields"/>
+    <ds:dataItem ds:name="center lane"								ds:type="UrbanChallenge.Operational.Common.LocalLaneModel, OperationalCommon" ds:specialType="mapfields"/>
+		<ds:dataItem ds:name="right lane"									ds:type="UrbanChallenge.Operational.Common.LocalLaneModel, OperationalCommon" ds:specialType="mapfields"/>
+    <ds:dataItem ds:name="lane model probability"     ds:type="double"/>
+		<ds:dataItem ds:name="selected lane"							ds:type="double"/>
+		<ds:dataItem ds:name="lane left bound"						ds:type="linelist"/>
+		<ds:dataItem ds:name="lane right bound"						ds:type="linelist"/>
+		<ds:dataItem ds:name="lane center line"						ds:type="linelist"/>
+
+    <ds:dataItem ds:name="subpath"                    ds:type="linelist"/>
+		<ds:dataItem ds:name="subpath2"										ds:type="linelist"/>
+    <ds:dataItem ds:name="smoothed path"              ds:type="linelist"/>
+    <ds:dataItem ds:name="left bound"                 ds:type="linelist"/>
+    <ds:dataItem ds:name="right bound"                ds:type="linelist"/>
+		<ds:dataItem ds:name="prediction path"						ds:type="linelist"/>
+		<ds:dataItem ds:name="prediction path2"						ds:type="linelist"/>
+    <ds:dataItem ds:name="original path1"             ds:type="linelist"/>
+    <ds:dataItem ds:name="original path2"             ds:type="linelist"/>
+    <ds:dataItem ds:name="tracking path"              ds:type="linelist"/>
+		<ds:dataItem ds:name="avoidance path"							ds:type="linelist"/>
+    <ds:dataItem ds:name="left road edge"             ds:type="linelist"/>
+    <ds:dataItem ds:name="right road edge"            ds:type="linelist"/>
+    <ds:dataItem ds:name="road bearing"               ds:type="linelist"/>
+    <ds:dataItem ds:name="road bearing confidence"    ds:type="double"/>
+
+    <ds:dataItem ds:name="left bound points"          ds:type="coordinates[]"/>
+    <ds:dataItem ds:name="right bound points"         ds:type="coordinates[]"/>
+
+		<ds:dataItem ds:name="initial heading"						ds:type="double" ds:units="rad"/>
+
+		<ds:dataItem ds:name="intersection path"					ds:type="linelist"/>
+		<ds:dataItem ds:name="intersection weight"				ds:type="double"/>
+		<ds:dataItem ds:name="intersection polygon"				ds:type="polygon"/>
+
+    <ds:dataItem ds:name="perimeter obstacles"        ds:type="obstacle[]"/>
+		<ds:dataItem ds:name="obstacles"					        ds:type="obstacle[]"/>
+    <ds:dataItem ds:name="occupancy deleted count"    ds:type="int"/>
+    <ds:dataItem ds:name="occupancy delta ts"         ds:type="double" ds:units="s"/>
+    
+    <ds:dataItem ds:name="zone bad regions"           ds:type="polygon[]"/>
+    <ds:dataItem ds:name="zone perimeter"             ds:type="polygon"/>
+    <ds:dataItem ds:name="front left point"           ds:type="coordinates"/>
+    <ds:dataItem ds:name="rear right point"           ds:type="coordinates"/>
+
+    <ds:dataItem ds:name="behavior rate"              ds:type="double" ds:specialType="runrate"/>
+    <ds:dataItem ds:name="planning rate"              ds:type="double" ds:specialType="runrate" st:windowSize="3"/>
+    <ds:dataItem ds:name="tracking rate"              ds:type="double" ds:specialType="runrate"/>
+    <ds:dataItem ds:name="pose rate"                  ds:type="double" ds:specialType="runrate" st:nominalRate="100"/>
+		<ds:dataItem ds:name="obstacle rate"							ds:type="double" ds:specialType="runrate"/>
+
+		<ds:dataItem ds:name="route feasible"							ds:type="bool" />
+    <ds:dataItem ds:name="blockage dist"              ds:type="double" ds:units="m"/>
+
+		<ds:dataItem ds:name="turn signal"								ds:type="UrbanChallenge.Behaviors.TurnSignal, Behaviors"/>
+
+    <ds:dataItem ds:name="arc voting results"         ds:type="UrbanChallenge.Operational.Common.ArcVotingResults, OperationalCommon"/>
+  </ds:dataItemGroup>
+  <ds:dataItemGroup ds:name="arbiter">
+    
+  </ds:dataItemGroup>
+</ds:dataItems>

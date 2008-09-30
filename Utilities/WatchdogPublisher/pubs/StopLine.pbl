@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>StopLine</name>
+  <files>
+    <string>\trunk\sensor prototypes\stopline\release\stopline.exe</string>
+  </files>
+  <relativeLocation>\StopLine</relativeLocation>
+  <lastPublish>2007-09-02T23:08:00.583-04:00</lastPublish>
+  <commands>
+    <string>StopLine.exe</string>
+  </commands>
+  <started>false</started>
+</Publish>

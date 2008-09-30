@@ -1,0 +1,90 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A31B04EF-5B90-440B-B5B1-2EE2972EC740}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Arbiter.ArbiterCommon</RootNamespace>
+    <AssemblyName>ArbiterCommon</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArbiterComponents.cs" />
+    <Compile Include="ArbiterExitData.cs" />
+    <Compile Include="ArbiterInformation.cs" />
+    <Compile Include="Descriptions\IntersectionDescription.cs" />
+    <Compile Include="Maneuver.cs" />
+    <Compile Include="Other\Art.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\Intersection\StoppedAtExitState.cs" />
+    <Compile Include="State\Intersection\StoppedAtStopState.cs" />
+    <Compile Include="State\Intersection\TurnDirection.cs" />
+    <Compile Include="State\Intersection\UTurnState.cs" />
+    <Compile Include="State\Intersection\WaitingAtStopState.cs" />
+    <Compile Include="State\PausedState.cs" />
+    <Compile Include="State\Travel\StoppingState.cs" />
+    <Compile Include="State\Travel\ChangeLanesState.cs" />
+    <Compile Include="State\Intersection\IntersectionState.cs" />
+    <Compile Include="State\IState.cs" />
+    <Compile Include="Descriptions\LaneDescription.cs" />
+    <Compile Include="Descriptions\MultiLaneDescription.cs" />
+    <Compile Include="State\Travel\OpposingLaneState.cs" />
+    <Compile Include="State\StartUpState.cs" />
+    <Compile Include="State\Travel\StayInLaneState.cs" />
+    <Compile Include="State\Travel\TravelState.cs" />
+    <Compile Include="State\Intersection\TurnState.cs" />
+    <Compile Include="State\UserControlledState.cs" />
+    <Compile Include="State\Zone\ZoneState.cs" />
+    <Compile Include="VehicleInformation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\Behaviors\Behaviors.csproj">
+      <Project>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</Project>
+      <Name>Behaviors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Navigation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

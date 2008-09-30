@@ -1,0 +1,182 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCDA0C90-5DE4-4008-BF8E-25CB76B11927}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UrbanChallenge.Arbiter.Core</RootNamespace>
+    <AssemblyName>ArbiterAdvanced</AssemblyName>
+    <ApplicationIcon>LightBulb.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArbiterCore.cs" />
+    <Compile Include="ArbiterSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ArbiterSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Communications\ArbiterOutput.cs" />
+    <Compile Include="Communications\Communicator.cs" />
+    <Compile Include="Communications\MessagingListener.cs" />
+    <Compile Include="CoreIntelligence\Behavioral\BehavioralDirector.cs" />
+    <Compile Include="CoreIntelligence\Behavioral\BlockageHandler.cs" />
+    <Compile Include="CoreIntelligence\Core.cs" />
+    <Compile Include="CoreIntelligence\CoreCommon.cs" />
+    <Compile Include="CoreIntelligence\CoreState.cs" />
+    <Compile Include="CoreIntelligence\Initialization\InitializationComponent.cs" />
+    <Compile Include="CoreIntelligence\Navigation\aStar.cs" />
+    <Compile Include="CoreIntelligence\Navigation\INavigationalPlan.cs" />
+    <Compile Include="CoreIntelligence\Navigation\IntersectionPlan.cs" />
+    <Compile Include="CoreIntelligence\Navigation\IntersectionStartupPlan.cs" />
+    <Compile Include="CoreIntelligence\Navigation\LanePlan.cs" />
+    <Compile Include="CoreIntelligence\Navigation\Navigator.cs" />
+    <Compile Include="CoreIntelligence\Navigation\PlanableInterconnect.cs" />
+    <Compile Include="CoreIntelligence\Navigation\PriorityHeap.cs" />
+    <Compile Include="CoreIntelligence\Navigation\RoadPlan.cs" />
+    <Compile Include="CoreIntelligence\Navigation\ZonePlan.cs" />
+    <Compile Include="CoreIntelligence\State\LaneAgent.cs" />
+    <Compile Include="CoreIntelligence\State\StartupReasoning.cs" />
+    <Compile Include="CoreIntelligence\State\StateReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Blockage\BlockageTactical.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\DominantLaneEntryMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\DominantZoneEntryMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\IDomininantMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\IEntryAreaMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\IIntersectionQueueable.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\IntersectionMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\IntersectionQueue.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\IntersectionVehicle.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\IntersectionTactical.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\ITacticalLane.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\IntersectionVehicleMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\LaneEntryAreaMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\SubmissiveEntryMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Monitors\ZoneAreaEntryMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\PriorityLane.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\PriorityMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Reasoning\TurnForwardMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\Reasoning\TurnReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Intersection\StopLane.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Opposing\Quadrants\OpposingForwardQuadrantMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Opposing\Quadrants\OpposingLateralQuadrantMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Opposing\Quadrants\OpposingRearQuadrantMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Opposing\Reasoning\OpposingLateralReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Opposing\Reasoning\OpposingReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Opposing\Tracking\OpposingForwardVehicleTracker.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Quadrants\ForwardQuadrantMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Reasoning\ForwardReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Reasoning\ILateralReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Tracking\ForwardVehicleTracker.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Reasoning\LaneChangeReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Quadrants\LateralQuadrantMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Reasoning\LateralReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Quadrants\RearQuadrantMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Common\RoadCommon.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Tracking\ForwardVehicleTrackingControl.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Tracking\RoadMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\RoadTactical.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Road\Navigation\TaskReasoning.cs" />
+    <Compile Include="CoreIntelligence\Tactical\TacticalDirector.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Tools\SpeedTools.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Vehicles\QueuingMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Vehicles\StateMonitor.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Vehicles\VehicleAgent.cs" />
+    <Compile Include="CoreIntelligence\Tactical\Zone\ZoneTactical.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ArbiterSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ArbiterSettings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LightBulb.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\Behaviors\Behaviors.csproj">
+      <Project>{934E43B8-C627-4BAB-8115-C84E8AFC2F60}</Project>
+      <Name>Behaviors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\MessagingService\MessagingService.csproj">
+      <Project>{19A82170-7FEE-4527-B835-A7359B864B28}</Project>
+      <Name>MessagingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\NameService\NameService.csproj">
+      <Project>{CD226615-66F6-4F8F-B7B1-0BF13714E2D0}</Project>
+      <Name>NameService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Remoting Interfaces\operationalService\operationalService.csproj">
+      <Project>{FBA7A699-D418-478D-BBB0-456992D8DA01}</Project>
+      <Name>operationalService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\RndfEditor\DrawingUtilities\DrawingUtilities\DrawingUtilities\DrawingUtilities.csproj">
+      <Project>{D0D71001-2079-4383-8D6B-0DA7FD42F08C}</Project>
+      <Name>DrawingUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Simulation\trunk\SimulatorClient\SimulatorClientFacade\SimulatorClientFacade.csproj">
+      <Project>{D89B5AE4-C729-4B09-9D97-4A0A02E683EC}</Project>
+      <Name>SimulatorClientFacade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ArbiterAdvancedCommon\ArbiterAdvancedCommon\ArbiterAdvancedCommon.csproj">
+      <Project>{403377CB-5F6F-4728-B043-E49EACB645D5}</Project>
+      <Name>ArbiterAdvancedCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ArbiterAdvancedRemote\ArbiterAdvancedRemote\ArbiterAdvancedRemote.csproj">
+      <Project>{F8BFBD51-58F9-41AF-82F4-2C18FB4195C3}</Project>
+      <Name>ArbiterAdvancedRemote</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterMissionDescription\ArbiterMissionDescription.csproj">
+      <Project>{66BCCC5B-7173-4232-9307-2D3518F6E509}</Project>
+      <Name>ArbiterMissionDescription</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork\ArbiterRoadNetwork.csproj">
+      <Project>{5ED74205-2992-462F-8FC4-381CDB2E63C4}</Project>
+      <Name>ArbiterRoadNetwork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

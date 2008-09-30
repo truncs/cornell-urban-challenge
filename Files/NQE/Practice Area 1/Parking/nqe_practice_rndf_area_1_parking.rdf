@@ -1,0 +1,62 @@
+/* ============================ */	
+RNDF_name	practice_rndf_area_1
+num_segments	2
+num_zones	1
+format_version	1.0
+creation_date	October-15-2007
+/* ============================ */	
+segment	1
+num_lanes	1
+segment_name	entry_segment
+lane	1.1
+num_waypoints	2
+exit	1.1.2	3.0.2	
+1.1.1	34.578330	-117.370993
+1.1.2	34.578209	-117.370994
+end_lane		
+end_segment
+/* ============================ */								
+segment	2							
+num_lanes	1							
+segment_name	exit_segment							
+lane	2.1							
+num_waypoints	2							
+checkpoint	2.1.2	1						
+2.1.1	34.577169	-117.370966
+2.1.2	34.576981	-117.370963
+end_lane							
+end_segment							
+/* ============================ */							
+zone	3		
+num_spots	3		
+zone_name	White_zone		
+perimeter	3.0		
+num_perimeterpoints	6		
+exit	3.0.5	2.1.1
+3.0.1	34.578166	-117.371432
+3.0.2	34.578153	-117.370995
+3.0.3	34.578165	-117.370489
+3.0.4	34.577253	-117.370469
+3.0.5	34.577254	-117.370967
+3.0.6	34.577259	-117.371457
+end_perimeter				
+spot	3.1
+spot_width	12	
+checkpoint	3.1.2	2
+3.1.1	34.577769	-117.370725
+3.1.2	34.577769	-117.370678
+end_spot
+spot	3.2
+spot_width	12	
+checkpoint	3.2.2	3
+3.2.1	34.577736	-117.370725
+3.2.2	34.577735	-117.370678
+end_spot
+spot	3.3
+spot_width	12	
+checkpoint	3.3.2	4
+3.3.1	34.577701	-117.370725
+3.3.2	34.577701	-117.37067
+end_spot
+end_zone				
+end_file

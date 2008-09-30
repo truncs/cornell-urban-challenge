@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>Ibeo105</name>
+  <files>
+    <string>\trunk\sensor prototypes\ibeobridge\release\ibeobridge.exe</string>
+  </files>
+  <relativeLocation>\Ibeo105</relativeLocation>
+  <lastPublish>0001-01-01T00:00:00</lastPublish>
+  <commands>
+    <string>IbeoBridge.exe nolog 105</string>
+  </commands>
+  <started>false</started>
+</Publish>

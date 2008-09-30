@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <version>1</version>
+  <name>Local Map 2</name>
+  <files>
+    <string>\trunk\local map 2\release\libacml_dll.dll</string>
+    <string>\trunk\local map 2\release\local map ii.exe</string>
+    <string>\trunk\local map 2\release\pgc.dll</string>
+    <string>\trunk\local map 2\release\pgftnrtl.dll</string>
+  </files>
+  <relativeLocation>\Local Map 2</relativeLocation>
+  <lastPublish>2007-09-02T23:04:47.6455-04:00</lastPublish>
+  <commands>
+    <string>Local Map II.exe</string>
+  </commands>
+  <started>false</started>
+</Publish>

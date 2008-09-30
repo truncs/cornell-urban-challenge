@@ -1,0 +1,113 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2AE124D-0E64-440F-AD3D-B7F1ABBDFD76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dataset</RootNamespace>
+    <AssemblyName>Dataset</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\ClientDataItemAddedEventArgs.cs" />
+    <Compile Include="Client\ClientDataValueAddedEventArgs.cs" />
+    <Compile Include="Client\DataItemClient.cs" />
+    <Compile Include="Client\DatasetClient.cs" />
+    <Compile Include="Client\IDataItemClient.cs" />
+    <Compile Include="Client\MapFieldsClient.cs" />
+    <Compile Include="Config\DatasetConfigurationSection.cs" />
+    <Compile Include="Config\DatasetXmlParser.cs" />
+    <Compile Include="DataItemComm.cs" />
+    <Compile Include="DataItemDescriptor.cs" />
+    <Compile Include="DataTypeCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\DataItemSource.cs" />
+    <Compile Include="Source\DatasetSender.cs" />
+    <Compile Include="Source\DatasetSource.cs" />
+    <Compile Include="Source\DatasetSourceFacade.cs" />
+    <Compile Include="Source\DataValueAddedEventArgs.cs" />
+    <Compile Include="Source\IDataItemSource.cs" />
+    <Compile Include="Source\RollingQueue.cs" />
+    <Compile Include="Source\RunRateDataItemSource.cs" />
+    <Compile Include="Units\Unit.cs" />
+    <Compile Include="Units\UnitCollection.cs" />
+    <Compile Include="Units\UnitConversion.cs" />
+    <Compile Include="Utility\CaseInsensitiveStringComparer.cs" />
+    <Compile Include="Utility\RWLockUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\datasetConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\datasetConfig.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <None Include="Config\datasetConfig.xsx">
+      <DependentUpon>datasetConfig.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Units\Units.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\SpecialTypeConfig.xsd">
+      <SubType>
+      </SubType>
+    </EmbeddedResource>
+    <None Include="Config\SpecialTypeConfig.xsx">
+      <DependentUpon>SpecialTypeConfig.xsd</DependentUpon>
+    </None>
+    <None Include="Units\Units.xsx">
+      <DependentUpon>Units.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{1C1C4C4C-836E-45B0-B632-866B4B6B7BE8}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Units\Units.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

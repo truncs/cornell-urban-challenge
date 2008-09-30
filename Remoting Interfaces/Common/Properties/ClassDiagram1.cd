@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="UrbanChallenge.Common.RndfNetwork.RndfNetwork">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\RndfNetwork.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAIgACACIAAAAAAAAgAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.UserWaypoint">
+    <Position X="21.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Waypoint\UserWaypoint.cs</FileName>
+      <HashCode>ACAAAAAAACAAAAAhAAAAIAAAAAAAAAAAABEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.UserWaypointID" BaseTypeListCollapsed="true">
+    <Position X="23" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Waypoint\UserWaypointID.cs</FileName>
+      <HashCode>AACAAAAAAAAQAAAEEAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.RndfWaypointID">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Waypoint\RndfWaypointID.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAgAAAAIAAQAAAAEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.RndfWayPoint">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Waypoint\RndfWayPoint.cs</FileName>
+      <HashCode>AAAECIAAASCAACAgAAAgIAAIAAgAiAUIYYAAAEEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.Way">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Way.cs</FileName>
+      <HashCode>AAAAAAAAAAAACQAAAAkAACAAAAAgAAAAAgAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.WayID">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\WayID.cs</FileName>
+      <HashCode>AAgAAAAAAAAAAAAEAAAAAAAAAAAAAABAAAAAQAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.UserPartition">
+    <Position X="16.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Lane\UserPartition.cs</FileName>
+      <HashCode>AIAQBEABEAAIAQAACAAAAAAAAAAgAAAAIAACAACAAgQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.UserPartitionID">
+    <Position X="18.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Lane\UserPartitionID.cs</FileName>
+      <HashCode>AAEAAAAAAAAQAAAEEAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.Segment">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Segment.cs</FileName>
+      <HashCode>AAgAAAAAAAAAAJAAAACQAAAAMAAAACAAAAAAAAAIEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.SegmentID">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\SegmentID.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAwAAAAMAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.Lane">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Lane\Lane.cs</FileName>
+      <HashCode>AAAAhEAoAYBAKJEAAACAAgAgAAIAIAAAAAAAAAAAEAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.LaneID">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Lane\LaneID.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAACAAAAggAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.LanePartition" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Lane\LanePartition.cs</FileName>
+      <HashCode>AAAEAEABAAAQAQAAEEAAAABAAAAgAAAAIQAAAAEABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.LanePartitionID">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Lane\LanePartitionID.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEABAQAAAgAAAAIAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.Intersection">
+    <Position X="3.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Intersection\Intersection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.LaneInterconnect" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Intersection\LaneInterconnect.cs</FileName>
+      <HashCode>AAAEAAABAAAAAQAAAAAAAAAAAAAgAAAAIAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.21" />
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.Blockage">
+    <Position X="18.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\RoadObjects\Blockage.cs</FileName>
+      <HashCode>AAAAAAAAQCAAgAABAAAAAAAAAAEAAAAABAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UrbanChallenge.Common.RndfNetwork.Goal">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\RoadObjects\Goal.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAIAAAIAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="UrbanChallenge.Common.RndfNetwork.IWaypointID" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Waypoint\IWaypointID.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UrbanChallenge.Common.RndfNetwork.IConnectWaypoints">
+    <Position X="5.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Waypoint\IConnectWaypoints.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="UrbanChallenge.Common.RndfNetwork.LaneBoundary">
+    <Position X="14" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RndfNetwork\Segment\Lane\Lane.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEAgAAEAABA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

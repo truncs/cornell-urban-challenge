@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Publish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <watchdogAutoRestart>false</watchdogAutoRestart>
+  <watchdogName>watchdog</watchdogName>
+  <watchdogPeriodms>500</watchdogPeriodms>
+  <lastWatchdogIntervention>0001-01-01T00:00:00</lastWatchdogIntervention>
+  <version>1</version>
+  <name>Clustering</name>
+  <files>
+    <string>\trunk\sensor prototypes\ichthyoallyeinotoxism\release\ichthyoallyeinotoxism.exe</string>
+  </files>
+  <relativeLocation>\Clustering</relativeLocation>
+  <lastPublish>2007-09-04T22:17:33.428875-04:00</lastPublish>
+  <commands>
+    <string>Ichthyoallyeinotoxism.exe</string>
+  </commands>
+  <active>false</active>
+</Publish>
